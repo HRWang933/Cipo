@@ -1,0 +1,181 @@
+h,Extension of Time Granted to Applicant: A ruling issued granting the applicant an extension of time under subsection 47(1) of the Trade-marks Act.
+6,Extension of Time Granted to Opponent: A ruling issued granting the opponent an extension of time under subsection 47(1) of the Trade-marks Act.
+7,Administrative Delay: A ruling issued setting a deadline for one or both of the parties to respond.
+8,With Consent - Extension of Time Granted to Opponent: With the consent from the applicant, a ruling issued granting the opponent an extension of time under subsection 47 (1) of the Trade-marks Act.
+9,With Consent - Extension of Time Granted to Applicant: With the consent from the opponent, a ruling issued granting the applicant an extension of time under subsection 47 (1) of the Trade-marks Act.
+10,Extension of Time Granted to Opponent - Cooling-off: A ruling issued granting the opponent an extension of time under subsection 47(1) of the Trade-marks Act amounting to a cooling-off period for the purpose of settlement negotiations.
+11,Extension of Time Granted to Applicant - Cooling-off: A ruling issued granting the applicant an extension of time under subsection 47(1) of the Trade-marks Act amounting to a cooling-off period for the purpose of settlement negotiations.
+13,Correspondence Created: The Registrar has issued correspondence.
+15,Extension of Time Refused to Applicant: An extension of time requested by the applicant under subsection 47(1) of the Trade-marks Act has been refused.
+16,Extension of Time Refused to Opponent: An extension of time requested by the opponent under subsection 47(1) of the Trade-marks Act has been refused.
+20,Cross Examination Letter Sent to Opponent - 4 Months Only: An order issued by the Registrar to give the opponent 4 months to conduct cross examinations of the applicant’s affidavits with no effect on any other deadlines.
+21,Cross Examination Letter Sent to Opponent - 4 + 4 Months: An order issued by the Registrar to give the opponent 4 months to conduct cross examinations of the applicant’s Rule 42 affidavits and a ruling granting the opponent an extension of time under subsection 47(1) of the Trade-marks Act for filing of its Rule 43 evidence.
+22,Cross Examination Letter Sent to Applicant - 4 Months Only: An order issued by the Registrar to give the applicant 4 months to conduct cross examinations of the opponent’s affidavits with no effect on any other deadlines.
+23,Cross Examination Letter Sent to Applicant - 4 + 4 Months: An order issued by the Registrar to give the applicant 4 months to conduct cross examinations of the opponent’s Rule 41 affidavits and a ruling granting the applicant an extension of time under subsection 47(1) of the Trade-marks Act for filing of its Rule 42 evidence. 
+48,Agent Changed: The Registrar has recorded a new agent on the record.
+87,Rep for Service Changed: The Registrar has recorded a new representative for service.
+91,Case Closed - Opponent Withdraws: The opponent has voluntarily withdrawn its opposition to the trademark application at issue and the trademark application which was the subject of the opposition will now proceed to allowance.
+92,Case Closed - Abandoned Section 38(7): The trademark application is deemed to have been abandoned under subsection 38(7.2) of the Trade-marks Act.
+94,Case Closed - Deemed Withdrawn: Opposition is deemed to be abandoned in accordance with subsection 38(7.1) of the Trade-marks Act.
+101,S/O Filed: A statement of opposition has been filed with the Registrar by the opponent.
+102,S/O Fee Received: The required fee of $750 for filing the opponent’s statement of opposition has been received in full.
+105,S/O Forwarded for Review: Statement of opposition has been forwarded to a member of the Board to assess if the statement of opposition raises a substantial issue for decision under subsections 38(4) and (5) of the Trade-marks Act.
+106,S/O Sent to Applicant: Statement of opposition forwarded by the Trademarks Opposition Board to the applicant.
+108,Failed to File C/S: The applicant has not filed (and served) its counter statement in response to the opponent’s statement of opposition.
+109,Deadline Expired – Applicant’s Evidence: The applicant’s deadline for filing evidence under Rule 42 has expired.
+110,Amended S/O Filed by Opponent: An amended statement of opposition has been filed by the opponent.
+111,Amended S/O Served on Applicant: Amended statement of opposition sent to the applicant by the opponent.
+113,Amended S/O Refused: Amended statement of opposition not accepted by the Trademarks Opposition Board.
+115,Amended S/O Accepted: Amended statement of opposition accepted by the Trademarks Opposition Board.
+120,Evidence Filed by Opponent: The Registrar has received evidence filed by the opponent under section 41 of the Regulations.
+121,Evidence Served on Applicant: Evidence served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant.
+122,Statement Filed - No Evidence from Opponent: The Registrar has received correspondence from the opponent confirming that he will not be filing evidence as required by s. 41 of the Regulations and subsection 38(7.1) of the Act.
+123,Statement Served - No Evidence from Opponent: A statement served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant to advise that the opponent will not be filing evidence.
+126,Statement Served - No Reply Evidence by Opponent: A statement served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant to advise that the opponent will not be filing reply evidence.
+128,Partial Evidence Filed by Opponent: The Registrar has received partial evidence filed by the opponent under s. 41 of the Regulations.
+129,Partial Evidence Served on Applicant: Partial evidence served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant.
+130,Reply Evidence Filed by Opponent: The Opponent has filed evidence under s. 43 of the Regulations.
+131,Reply Evidence Served on Applicant: Reply evidence served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant.
+132,Statement Filed - No Reply Evidence by Opponent: The opponent has confirmed in writing that he/she will not be filing evidence as required by s. 41 of the Regulations and subsection 38(7.1) of the Act.
+136,No Reply Evidence by Opponent: No reply evidence filed by opponent during the opposition proceeding.
+138,Partial Reply Evidence Filed by Opponent: The Registrar has received partial evidence filed by the opponent under s. 43 of the Regulations.
+139,Partial Reply Evidence Served by Opponent: Partial reply evidence served in accordance with section 37 of the Trade-marks Regulations by the opponent on the applicant.
+140,Leave Evidence Filed by Opponent: The Registrar has received evidence filed by the opponent under s. 44 of the Regulations.
+141,Leave Evidence Served on Applicant: Additional evidence, which was not available during the opponent’s evidence stage, sent by the opponent to the applicant.
+143,Leave Evidence Accepted from Opponent: Additional evidence from opponent accepted to form part of opposition proceedings.
+144,Leave Evidence Refused from Opponent: Additional evidence from opponent refused and does not form part of opposition proceedings.
+145,Cross Examination Undertakings Filed by Opponent - Rule 42: Undertakings for cross examination of the applicant’s Rule 42 evidence filed with the Trademarks Opposition Board by the opponent.
+147,Cross Examination Order on Applicant - Rule 42: An order issued by the Board to give the opponent the right to cross examine the applicant’s affidavits filed as evidence under Rule 42 in the opposition proceeding.
+148,Cross Examination Transcripts Filed by Opponent - Rule 42: Transcripts of cross examination of the applicant’s Rule 42 evidence filed with the Trademarks Opposition Board by the opponent. 
+149,Cross Examination of Applicant Cancelled - Rule 42: The opponent has confirmed that he/she will not proceed with the cross examination of the applicant’s affidavits filed under s. 42 of the Regulations.
+150,Written Argument Requested – Applicant: The Registrar issued the written notice under subsection 46(1) of the Regulations, advising that the applicant may, within one month after the date of the notice, file written arguments with the Registrar.
+151,Written Argument Requested – Opponent: The Registrar issued the written notice under subsection 46(1) of the Regulations advising that the opponent may, within one month after the date of the notice, file written arguments with the Registrar.
+152,Written Argument Filed by Opponent: The opponent has filed written arguments.
+153,Written Argument Filed by Applicant: The applicant has filed written arguments.
+154,Written Argument Exchanged: Written arguments filed by the applicant and the opponent are sent to the other party by the Trademarks Opposition Board.
+155,Oral Hearing Notice Mailed: The Registrar has issued a notice setting the date, time and location of the hearing in this case.
+156,Request for Oral Hearing by Opponent: Request received from the opponent to have an oral hearing before the Trademarks Opposition Board.
+157,Request for Oral Hearing by Applicant: Request received from the applicant to have an oral hearing before the Trademarks Opposition Board.
+158,Statement - No Written Argument by Opponent: The opponent has filed correspondence confirming that he/she will not be filing a written argument.
+159,Statement - No Written Argument by Applicant: The applicant has filed correspondence confirming that he/she will not be filing a written argument.
+160,Oral Hearing Scheduled: A date, time and place scheduled by the Trademarks Opposition Board.
+161,Oral Hearing Cancelled: The hearing that was scheduled in this case has been cancelled.
+162,Oral Hearing Postponed: The hearing that was scheduled in this case has been postponed to another date.
+163,No Oral Hearing Requested by Opponent: The opponent has not requested to be heard at a hearing in this case.
+164,No Oral Hearing Requested by Applicant: The applicant has not requested to be heard at a hearing in this case.
+166,Applicant Attending Hearing: The applicant has confirmed that he/she will be participating at the hearing scheduled in this case.
+167,Opponent Attending Hearing: The opponent has confirmed that he/she will be participating at the hearing scheduled in this case.
+168,Oral Hearing Rescheduled: The hearing that was scheduled in this case has been rescheduled to another date. 
+170,Decision Transmitted to Parties: The final decision on the opposition case is forwarded to both the applicant and the opponent.
+171,Appeal Initiated: An appeal of the Registrar’s decision is filed with the Federal Court.
+191,Decision - Opposition Rejected: A final decision issued by the Registrar to reject the opponent’s opposition to the trademark application.
+192,Decision - Application Refused: A final decision issued by the Registrar to refuse the applicant’s application for registration.
+193,Decision - Split Decision: A final decision issued by the Registrar to refuse some goods and/or services but to reject the opponent’s opposition for the remaining goods and/or services.
+194,Goods/Services Amended - Split Decision: Goods and/or services amended as per the Registrar’s final decision.
+195,Cross Examination Undertakings Filed by Opponent - Leave Evidence: Undertakings to cross examination of the applicant’s additional evidence filed with the Trademarks Opposition Board by the opponent.
+196,Cross Examination of Applicant Requested - Leave Evidence: The opponent has requested that the Registrar issue an order for cross examination of the applicant’s affidavits filed under s. 44 of the Regulations.
+197,Cross Examination Order on Applicant - Leave Evidence: An order issued by the Board to give the opponent the right to cross examine the applicant’s affidavits filed as additional evidence in the opposition proceeding.
+198,Cross Examination Transcripts Filed by Opponent - Leave Evidence: Transcripts of cross examination of the applicant’s additional evidence filed with the Trademarks Opposition Board by the opponent.
+199,Cross Examination of Applicant Cancelled - Leave Evidence: The opponent has confirmed that he/she will not proceed with the cross examination of the applicant’s affidavits filed with leave under s. 44 of the Regulations.
+201,C/S Filed by Applicant: The applicant has filed a counter statement under s. 38(6) of the Act.
+202,C/S Served on Opponent: Counter statement served in accordance with section 37 of the Trade-marks Regulations by the applicant on the opponent.
+210,Amended C/S Filed by Applicant: The applicant has filed an amended counter statement.
+211,Amended C/S Served on Opponent: Amended counter statement sent to the opponent by the applicant.
+213,Amended C/S Refused: Amended counter statement not accepted by the Trademarks Opposition Board.
+215,Amended C/S Accepted: Amended counter statement accepted by the Trademarks Opposition Board. 
+220,Evidence Filed by Applicant: The Registrar has received evidence filed by the applicant under s. 42 of the Regulations.
+221,Evidence Served on Opponent: Evidence served in accordance with section 37 of the Trade-marks Regulations by the applicant on the opponent.
+222,Statement Filed - No Evidence from Applicant: The Registrar has received correspondence from the applicant confirming that he/she will not be filing evidence.
+223,Statement Served - No Evidence from Applicant: A statement served in accordance with section 37 of the Trade-marks Regulations by the applicant on the opponent to advise that the applicant will not be filing evidence.
+228,Partial Evidence Filed by Applicant: The Registrar has received partial evidence filed by the applicant under s. 42 of the Regulations.
+229,Partial Evidence Served on Opponent: Partial evidence served in accordance with section 37 of the Trade-marks Regulations by the applicant on the opponent.
+230,Interlocutory Motion Received: The applicant has filed a request for the Registrar to issue a ruling striking all, or portions, of the opponent’s statement of opposition.
+235,Interlocutory Ruling Issued: The Registrar has issued an interlocutory ruling concerning the sufficiency of the opponent’s statement of opposition.
+240,Leave Evidence Filed by Applicant: The applicant has requested leave to file additional evidence under s. 44 of the Regulations.
+241,Leave Evidence Served on Opponent: Additional evidence, which was not available during the applicant’s evidence stage, sent by the applicant to the opponent.
+243,Leave Evidence Accepted - Applicant: Additional evidence from applicant accepted to form part of opposition proceedings.
+244,Leave Evidence Refused - Applicant: Additional evidence from applicant refused and does not form part of opposition proceedings.
+245,Cross Examination Undertakings Filed by Applicant - Rule 41: Undertakings to cross examination of the opponent’s Rule 41 evidence filed with the Trademarks Opposition Board by the applicant.
+246,Cross Examination of Opponent Requested - Rule 41: The applicant has requested that the Registrar issue an order for cross examination of the opponent’s affidavits filed under s. 41 of the Regulations.
+247,Cross Examination Order on Opponent - Rule 41: An order issued by the Board to give the applicant the right to cross examine the opponent’s affidavits filed as Rule 41 evidence in the opposition proceeding.
+248,Cross Examination Transcripts Filed by Applicant - Rule 41: Transcripts to cross examination of the opponent’s Rule 41 evidence filed with the Trademarks Opposition Board by the applicant.
+249,Cross Examination of Opponent Cancelled - Rule 41: The applicant has confirmed that he/she will not proceed with the cross examination of the opponent’s affidavits filed under s. 41 of the Regulations. 
+255,Cross Examination Undertakings Filed by Applicant - Rule 43: Undertakings to cross examination of the opponent’s Rule 43 evidence filed with the Trademarks Opposition Board by the applicant.
+257,Cross Examination Order on Opponent - Rule 43: An order issued by the Board to give the applicant the right to cross examine the opponent’s affidavits filed as Rule 43 evidence in the opposition proceeding.
+258,Cross Examination Transcripts Filed by Applicant - Rule 43: Transcripts to cross examination of the opponent’s Rule 43 evidence filed with the Trademarks Opposition Board by the applicant.
+259,Cross Examination of Opponent Cancelled - Rule 43: The applicant has confirmed that he/she will not proceed with the cross examination of the opponent’s affidavits filed under s. 43 of the Regulations.
+260,Cross Examination of Opponent Requested - Rule 43: The applicant has requested that the Registrar issue an order for cross examination of the opponent’s affidavits filed under s. 43 of the Regulations.
+295,Cross Examination Undertakings Filed by Applicant - Leave Evidence: Undertakings to cross examination of the opponent’s additional evidence filed with the Trademarks Opposition Board by the applicant.
+296,Cross Examination of Opponent Requested - Leave Evidence: The applicant has requested that the Registrar issue an order for cross examination of the opponent’s affidavits filed under s. 44 of the Regulations.
+297,Cross Examination Order on Opponent - Leave Evidence: An order issued by the Board to give the applicant the right to cross examine the opponent’s affidavits filed as additional evidence in the opposition proceeding.
+298,Cross Examination Transcripts Filed by Applicant - Leave Evidence: Transcripts to cross examination of the opponent’s additional evidence filed with the Trademarks Opposition Board by the applicant.
+299,Cross Examination of Opponent Cancelled - Leave Evidence: The applicant has confirmed that he/she will not proceed with the cross examination of the opponent’s affidavits filed under s. 44 of the Regulations.
+301,Deadline to File S/O: The opponent’s deadline for filing his/her statement of opposition.
+304,S/O Not Filed: No statement of opposition was filed by a potential opponent.
+311,Deadline to File C/S: The applicant’s deadlines for filing his/her counter statement.
+321,Deadline to File Opponent’s Evidence: Deadline for opponent to file his/her evidence under s. 41 of the Regulations.
+323,Deadline - Reply Evidence: Applicant’s deadline for filing his/her evidence under s. 43 of the Regulations.
+324,Deadline - Reply Evidence: Opponent’s deadline for filing his/her evidence under s. 43 of the Regulations. 
+326,Deadline - Cross Examination from Opponent - Rule 42: Opponent’s deadline to conduct cross examination of the applicant’s evidence filed under s. 42 of the Regulations.
+327,Deadline - Reply Evidence: Opponent’s deadline for filing its evidence under s.43 of the Regulations.
+331,Deadline to File Applicant’s Evidence: Applicant’s deadline for filing its evidence under s. 42 of the Regulations.
+332,Deadline to File Opponent’s Evidence: Opponent’s deadline for filing its evidence under s. 42 of the Regulations.
+334,Deadline - Cross Examination from Applicant - Rule 41: Applicant’s deadline to conduct cross examination of the opponent’s evidence filed under s. 41 of the Regulations.
+335,Amendment to Goods/Services Received: An application to amend the goods and/or services on a pending application in the opposition proceeding.
+336,Amended Application - Accepted: The request to amend the application received from the applicant is accepted by the Trademarks Opposition Board.
+337,Amended Application - Refused: The request to amend the application received from the applicant is refused by the Trademarks Opposition Board.
+338,Deadline to File Applicants Evidence: Applicant’s deadline for filing his/her evidence under s. 42 of the Regulations.
+341,Deadline to File Written Arguments - Applicant: The applicant’s deadline as for filing his/her written arguments.
+342,Deadline to File Written Arguments - Opponent: The opponent’s deadline as for filing his/her written arguments.
+344,Deadline to Confirm Scheduled Hearing: The opponent and applicant’s deadline for confirming their respective attendance at the scheduled hearing, including date, time, location and requests for simultaneous translation.
+345,Deadline to Request Oral Hearing - Applicant: The applicant’s deadline for requesting to be heard at an oral hearing under s. 46 of the Regulations.
+346,Deadline to Request Oral Hearing - Opponent: The opponent’s deadline for requesting to be heard at an oral hearing under s. 46 of the Regulations.
+347,Deadline - Cross Examination from Applicant - Rule 43: The applicant’s deadline for conducting the cross examination of the opponent’s affidavits filed under s. 43 of the Regulations.
+348,Deadline - Cross Examination from Opponent - Leave Evidence: The opponent’s deadline for conducting the cross examination of the applicant’s affidavits filed with leave from the Registrar under s. 44 of the Regulations.
+349,Deadline - Cross Examination from Applicant - Leave Evidence: The applicant’s deadline for conducting the cross examination of the opponent’s affidavits filed with leave from the Registrar under s. 44 of the Regulations. 
+360,Application Amended: The applicant’s trademark application has been amended, upon request of the applicant.
+505,Extension of Time Granted to Owner: The registrant has been granted an extension of time under s. 47 of the Trade-marks Act to file his/her evidence in response to the s. 45 notice.
+507,Administrative Delay: A ruling issued setting a deadline for one or both of the parties to respond.
+513,Correspondence Created: The Registrar has issued correspondence.
+515,Extension of Time Refused to Owner: An extension of time requested by the owner under s. 47 of the Trade-marks Act has been refused.
+533,Request Reviewed: The Registrar has reviewed a request from a third party for the issuance of a s. 45 notice.
+538,Notice Sent to Owner: Section 45 notice sent to registered owner of trademark.
+539,Restricted Notice Sent to Owner: Section 45 restricted notice sent to registered owner of trademark.
+541,Statement - No Evidence Filed: The registered owner has confirmed that he/she will not be filing evidence in response to the s. 45 notice.
+542,Evidence Filed by Owner: Owner files evidence of use as requested by notice.
+543,Statement - No Argument Filed: The registered owner or requesting party has confirmed in writing that they will not be filing written arguments.
+544,Arguments Requested from Requester: The Registrar invites the requester to file written arguments.
+545,Arguments Filed by Requester: The requester files written arguments.
+547,Supplementary Arguments Requested from Requester: The Registrar invites the requester to file supplementary written arguments directed at the supplementary evidence filed by the registered owner.
+548,Supplementary Arguments Filed by Requester: The requester files supplementary arguments directed at the supplementary evidence filed by the registered owner.
+550,Arguments Requested from Owner: This action line is used in duplicate to invite the registered owner to file supplementary written arguments if needed.
+551,Arguments Filed by Owner: This action line is used in duplicate to record supplementary written arguments filed by registered owner.
+552,Evidence Received from Owner: The registered owner files supplementary evidence late in the proceeding.
+553,No Written Argument/Statement Filed by Requester
+554,No Written Argument/Statement Filed by Owner 
+555,Not Interested Letter Sent to Requester: When the requester files no written arguments, a letter is addressed to the requester asking whether the requester has lost interest in the proceedings.
+558,Requester Attending Hearing: The requesting party has filed correspondence confirming that it would like to be heard at a hearing.
+559,Registrant Attending Hearing: The registered owner has filed correspondence confirming that he/she would like to be heard at a hearing.
+560,Oral Hearing Requested – Requester: The requester files a request for an oral hearing.
+561,Oral Hearing Requested – Owner: The registered owner files a request for an oral hearing.
+562,Oral Hearing Scheduled: The Registrar advises the parties of the date, time and place of the oral hearing.
+563,Oral Hearing Cancelled: The hearing that was scheduled in this case has been cancelled.
+570,Decision Transmitted to Parties: The Registrar advises the parties of the final decision.  Decision—Maintained Decision—Expunged Decision—Amend Goods/Services
+573,Oral Hearing Rescheduled: The hearing that was scheduled in this case has been rescheduled.
+574,Appeal Initiated on Automatic Decision: Notice of application filed against the Registrar’s automatic decision to expunge the registration.
+575,Appeal Initiated on Written Decision: Notice of application filed against the hearing officer’s final decision.
+576,Appeal Discontinued: The appeal of the Registrar’s decision under s. 56 of the Trade-marks Act has been discontinued by the parties.
+577,Decision Upheld on Appeal - Additional Evidence: Decision of the Registrar upheld by the Federal Court of Canada.
+580,Decision Reversed on Appeal - Additional Evidence: Decision of the Registrar reversed by the Federal Court of Canada.
+581,Decision - Maintained: Final decision of the Registrar under s. 45 of the Trade-marks Act, maintaining the trademark on the register.
+582,Decision - Expunged: Final decision of the Registrar under s. 45 of the Trade-marks Act, expunging the trademark from the register.
+583,Decision - Amend Goods/Services: Final decision of the Registrar under s. 45 of the Trade-marks Act, amending the statement of goods/services for which the trademark is registered.
+585,Decision Reversed: No additional evidence
+591,Case Closed - Requester Withdraws: The parties have discontinued the s. 45 proceeding on consent. 
+592,Case Closed - Registration Cancelled: The applicant has voluntarily cancelled the registration under s. 41 of the Act.
+601,Deadline - Evidence from Owner: The registered owner’s deadline for filing evidence in response to the s. 45 notice.
+602,Deadline - Arguments from Requester: Requesting party’s deadline for the filing of written arguments.
+604,Deadline - Arguments from Owner: Registered owner’s deadline for filing its written arguments.
+605,Deadline - Supplementary Arguments: The Registrar has set a deadline for the filing of supplementary written arguments.
+620,Rescindment Received: When a request is received from the requester along with the registered owner’s consent to withdraw the section 45 proceedings.
+621,Requester Withdraws: When a request is received from the requester without the registered owner’s consent to withdraw the section 45 proceedings. 

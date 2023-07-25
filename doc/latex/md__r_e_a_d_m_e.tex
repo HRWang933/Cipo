@@ -1,0 +1,70 @@
+The Goal\+:
+
+Load and parse files\+:
+\begin{DoxyItemize}
+\item Patent Application Full Text Data X\+ML
+\item Patent Grant Full Text Data X\+ML
+\item Patent Assignment X\+ML
+\item Maintenance Fee C\+SV
+\item Attorney info T\+XT
+\item Trademarks application data
+\end{DoxyItemize}
+
+Request from A\+PI\+:
+\begin{DoxyItemize}
+\item Transaction history information
+\end{DoxyItemize}
+
+Scrape from W\+EB pages\+:
+\begin{DoxyItemize}
+\item Patent holder information
+\end{DoxyItemize}
+
+S\+C\+R\+I\+P\+TS\+:
+\begin{DoxyItemize}
+\item chromedriver Binary, used by Selenium webdriver to communicate with Chromium headless browser
+\item download\+\_\+chrome\+\_\+driver.\+sh B\+A\+SH, downloading chrome driver
+\item kill\+\_\+proc.\+sh B\+A\+SH, kill orphan processes
+\item \mbox{\hyperlink{phi__start_8py}{phi\+\_\+start.\+py}} P\+Y\+T\+H\+ON, Start scrapping Patent Holder Information
+\item \mbox{\hyperlink{etl__start_8py}{etl\+\_\+start.\+py}} P\+Y\+T\+H\+ON, Start both Loading and Parsing processes (depend on command line keys)
+\item load\+\_\+all.\+sh B\+A\+SH, Start loading for all file types (used by C\+R\+ON)
+\item parse\+\_\+all.\+sh B\+A\+SH, Start parsing for all file types (used by C\+R\+ON)
+\item tor\+\_\+install.\+sh B\+A\+SH, Install T\+OR service and depenancies
+\item dependencies.\+sh B\+A\+SH, Install all I\+PV project dependancies
+\item install\+\_\+headless\+\_\+chrome.\+sh B\+A\+SH, Install Headless Chrome browser
+\item \mbox{\hyperlink{trh__start_8py}{trh\+\_\+start.\+py}} P\+Y\+T\+H\+ON, Start collecting information about Transaction history
+\item crontab.\+lst T\+XT, Copy of current C\+R\+ON task scheduler
+\end{DoxyItemize}
+
+U\+S\+A\+GE\+: \begin{DoxyVerb}etl_start.py Command Line Parameters
+
+--mode=<mode> - Processing mode
+   <mode>:
+          load  - Loading files from bulkdata.uspto.gov,canada trademaeks to the Local FS
+          parse - Parsing files from Local FS and bulk load parsed data into Impala or Kudu tables
+
+--type=<type> - Processing files type
+   <type>:
+          ipa - Application (starting from 2005)
+          pa  - Application (2001 - 2004)
+          ipg - Grants (starting from 2005)
+          pg  - Grants (2001 - 2004)
+          fee - Transactions history
+          ad  - Assignments
+          att - Attorney info
+          td  - Canada Trademarks data
+
+--init_databases - Create databases structure before start processing (Could by used only once, after first project install)
+
+--init_tables - Create tables structure before start processing (Could by used only once, after first project install)
+
+--full - Load all files for particular year (not new files only) if not --year key used, load files for current year
+
+--year=<year> - Set particular year (used only with --full key)
+
+--tor - Force using TOR proxy for files downloading
+
+EXAMPLE: etl_start.py --mode=load --type=ipa --full --year=2017 --tor
+         Application XML files for full year 2017 will be downloaded through the TOR proxy
+\end{DoxyVerb}
+ 

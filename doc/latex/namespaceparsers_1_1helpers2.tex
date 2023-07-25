@@ -1,0 +1,140 @@
+\hypertarget{namespaceparsers_1_1helpers2}{}\doxysection{parsers.\+helpers2 Namespace Reference}
+\label{namespaceparsers_1_1helpers2}\index{parsers.helpers2@{parsers.helpers2}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a49fc738264f745e1fee799830fc37d1c}{get\+\_\+value}} (arg)
+\begin{DoxyCompactList}\small\item\em Extract value from given tag content, return \char`\"{}-\/\char`\"{} when no content found. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a8ed2fbd973aabe50d97d4aecf8a1ce7e}{get\+\_\+parts}} (xml\+\_\+part, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Get list of tags content from particular tag. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_afd913e5c8e7a49865be9d650f05db212}{get\+\_\+multi\+\_\+parts}} (xml\+\_\+part, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Get nested lists of tags content from particular tag. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a6b6e3fc65fe57e140e7b447b30b597c8}{extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Common extract routine used for extract plain list of results. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a1c0e03741441cfd697fe7974c2f3e1af}{multi\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Common extract routine used for extract nested lists of results. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_adff79ee36256b3523d867af66cd605fd}{w\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag, add\+\_\+tag=None)
+\begin{DoxyCompactList}\small\item\em Special extractor used by agent parser. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a4607cf171a14d369aa928f517159b8b9}{w\+\_\+old\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag, add\+\_\+tag=None)
+\begin{DoxyCompactList}\small\item\em Special extractor used by agent parser (old X\+ML version) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_ac340433941b9cc61199965f8014225db}{get\+\_\+class}} (arg)
+\begin{DoxyCompactList}\small\item\em Get and format classification string for classification parser. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a3cefd2a662a113de997add524039b290}{cl\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Special extractor used by classification parser. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a37aaf4c5733afd17382b0be5940300e8}{cl\+\_\+old\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag, app\+\_\+num\+\_\+tag)
+\begin{DoxyCompactList}\small\item\em Special extractor used by classification parser (old X\+ML version) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceparsers_1_1helpers2_a7d138075c66083288f6d448fbf85a2ab}{as\+\_\+extract}} (xml\+\_\+part, to\+\_\+extract, parts\+\_\+tag=None, sub\+\_\+tags=None)
+\begin{DoxyCompactList}\small\item\em Special extractor used by assignment X\+ML parser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a7d138075c66083288f6d448fbf85a2ab}\label{namespaceparsers_1_1helpers2_a7d138075c66083288f6d448fbf85a2ab}} 
+\index{parsers.helpers2@{parsers.helpers2}!as\_extract@{as\_extract}}
+\index{as\_extract@{as\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{as\_extract()}{as\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+as\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag = {\ttfamily None},  }\item[{}]{sub\+\_\+tags = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Special extractor used by assignment X\+ML parser. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a3cefd2a662a113de997add524039b290}\label{namespaceparsers_1_1helpers2_a3cefd2a662a113de997add524039b290}} 
+\index{parsers.helpers2@{parsers.helpers2}!cl\_extract@{cl\_extract}}
+\index{cl\_extract@{cl\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{cl\_extract()}{cl\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+cl\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Special extractor used by classification parser. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a37aaf4c5733afd17382b0be5940300e8}\label{namespaceparsers_1_1helpers2_a37aaf4c5733afd17382b0be5940300e8}} 
+\index{parsers.helpers2@{parsers.helpers2}!cl\_old\_extract@{cl\_old\_extract}}
+\index{cl\_old\_extract@{cl\_old\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{cl\_old\_extract()}{cl\_old\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+cl\+\_\+old\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Special extractor used by classification parser (old X\+ML version) 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a6b6e3fc65fe57e140e7b447b30b597c8}\label{namespaceparsers_1_1helpers2_a6b6e3fc65fe57e140e7b447b30b597c8}} 
+\index{parsers.helpers2@{parsers.helpers2}!extract@{extract}}
+\index{extract@{extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Common extract routine used for extract plain list of results. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_ac340433941b9cc61199965f8014225db}\label{namespaceparsers_1_1helpers2_ac340433941b9cc61199965f8014225db}} 
+\index{parsers.helpers2@{parsers.helpers2}!get\_class@{get\_class}}
+\index{get\_class@{get\_class}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{get\_class()}{get\_class()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+get\+\_\+class (\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+
+
+Get and format classification string for classification parser. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_afd913e5c8e7a49865be9d650f05db212}\label{namespaceparsers_1_1helpers2_afd913e5c8e7a49865be9d650f05db212}} 
+\index{parsers.helpers2@{parsers.helpers2}!get\_multi\_parts@{get\_multi\_parts}}
+\index{get\_multi\_parts@{get\_multi\_parts}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{get\_multi\_parts()}{get\_multi\_parts()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+get\+\_\+multi\+\_\+parts (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Get nested lists of tags content from particular tag. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a8ed2fbd973aabe50d97d4aecf8a1ce7e}\label{namespaceparsers_1_1helpers2_a8ed2fbd973aabe50d97d4aecf8a1ce7e}} 
+\index{parsers.helpers2@{parsers.helpers2}!get\_parts@{get\_parts}}
+\index{get\_parts@{get\_parts}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{get\_parts()}{get\_parts()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+get\+\_\+parts (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Get list of tags content from particular tag. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a49fc738264f745e1fee799830fc37d1c}\label{namespaceparsers_1_1helpers2_a49fc738264f745e1fee799830fc37d1c}} 
+\index{parsers.helpers2@{parsers.helpers2}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+get\+\_\+value (\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+
+
+Extract value from given tag content, return \char`\"{}-\/\char`\"{} when no content found. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a1c0e03741441cfd697fe7974c2f3e1af}\label{namespaceparsers_1_1helpers2_a1c0e03741441cfd697fe7974c2f3e1af}} 
+\index{parsers.helpers2@{parsers.helpers2}!multi\_extract@{multi\_extract}}
+\index{multi\_extract@{multi\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{multi\_extract()}{multi\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+multi\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Common extract routine used for extract nested lists of results. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_adff79ee36256b3523d867af66cd605fd}\label{namespaceparsers_1_1helpers2_adff79ee36256b3523d867af66cd605fd}} 
+\index{parsers.helpers2@{parsers.helpers2}!w\_extract@{w\_extract}}
+\index{w\_extract@{w\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{w\_extract()}{w\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+w\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag,  }\item[{}]{add\+\_\+tag = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Special extractor used by agent parser. 
+
+\mbox{\Hypertarget{namespaceparsers_1_1helpers2_a4607cf171a14d369aa928f517159b8b9}\label{namespaceparsers_1_1helpers2_a4607cf171a14d369aa928f517159b8b9}} 
+\index{parsers.helpers2@{parsers.helpers2}!w\_old\_extract@{w\_old\_extract}}
+\index{w\_old\_extract@{w\_old\_extract}!parsers.helpers2@{parsers.helpers2}}
+\doxysubsubsection{\texorpdfstring{w\_old\_extract()}{w\_old\_extract()}}
+{\footnotesize\ttfamily def parsers.\+helpers2.\+w\+\_\+old\+\_\+extract (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+part,  }\item[{}]{to\+\_\+extract,  }\item[{}]{parts\+\_\+tag,  }\item[{}]{app\+\_\+num\+\_\+tag,  }\item[{}]{add\+\_\+tag = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Special extractor used by agent parser (old X\+ML version) 
+

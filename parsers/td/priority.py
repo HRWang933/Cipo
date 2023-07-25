@@ -1,0 +1,32 @@
+#############################################################################
+# Extract assignee data from Assignment XML file
+#############################################################################
+import xml.etree.ElementTree as ET
+import importlib
+helpers = importlib.import_module('.helpers', 'parsers')
+
+#############################################################################
+def create_line(xml_part):
+    
+    ns = {'tmk':'http://www.wipo.int/standards/XMLSchema/ST96/Trademark',
+          'com':'http://www.wipo.int/standards/XMLSchema/ST96/Common',
+          'catmk':'http://www.cipo.ic.gc.ca/standards/XMLSchema/ST96/Trademark',
+          'cacom':'http://www.cipo.ic.gc.ca/standards/XMLSchema/ST96/Common'
+
+         }
+    to_extract = [".//tmk:TrademarkBag/tmk:Trademark/com:ApplicationNumber/com:ST13ApplicationNumber"]
+
+    parts_tag = './/tmk:TrademarkBag/tmk:Trademark/tmk:PriorityBag/tmk:Priority'
+
+    sub_tags = ['.//ApplicationNumber/com:ApplicationNumberText',
+                './/com:PriorityCountryCode',
+                './/com:PriorityApplicationFilingDate',
+                './/com:CommentText',
+                './/tmk:PriorityPartialGoodsServices/tmk:ClassDescriptionBag/tmk:ClassDescription/com:ClassificationVersion',
+                './/tmk:PriorityPartialGoodsServices/tmk:ClassDescriptionBag/tmk:ClassDescription/tmk:ClassNumber',
+                './/tmk:PriorityPartialGoodsServices/tmk:ClassDescriptionBag/tmk:ClassDescription/tmk:GoodsServicesDescriptionText'
+               ]
+
+
+    return helpers.td_extract(xml_part, to_extract, ns, parts_tag, sub_tags,bool_checklongstr=True)
+

@@ -1,0 +1,178 @@
+01, Created: The very first step in the automated trademarks registration process is to create a paper file in order to store all related paper documents.
+02, Transferred: This action is created when a partial ownership occurs or when an application to extend the goods/services is moved to its own file. In either situation, the old file/application status is set to transferred. The old file/application is maintained for reference purposes.
+03, Inactivated: The application has become inactive.
+04, Re-activated: The application has become reactivated from its previous inactive status prior to formalization.
+05, Abandoned - Voluntary: The application has been voluntarily abandoned by the applicant.
+06, Abandoned - section 36: The application has been abandoned by the Trademarks Office for being in default (failure to comply with an Office request in the allocated time) in the prosecution of an application filed under the Trade-Marks Act.
+07, Abandoned - section 40(3): The application for the registration of a proposed trademark is deemed to be abandoned for failure to provide a declaration of use to the Registrar stating that the applicant is using the specified goods and/or services as outlined in the application.
+08, Cancelled - section 16(3): The proposed goods and/or services have been cancelled for failure to provide a declaration of use to the Registrar stating that the applicant is using the specified goods and/or services as outlined in the application. This action is created if, after the proposed goods/services are cancelled, there remains goods/services which have been used; otherwise the entire application would have been abandoned, in compliance with section 40(3).  09 Refused: The application for the registration of a proposed trademark has been refused by the Registrar of trade-marks.
+10, Withdrawn: The section 9 trademark has been withdrawn by the applicant.
+11, Abandonment Removed: The abandoned status has been removed.
+12, Extension of Time: An extension of time has been granted to the applicant in order to respond to a request by the Trademarks Office.
+13, Default: The application for the registration of a proposed trademark is in default for failure to respond to a request by the Trademarks Office. If the default is not corrected the next step would be Abandoned - section 36.
+14, Default Notice Sent: A notice of default has been sent to the applicant
+15, Correspondence Created: The Trademarks Office has generated correspondence to the applicant/registrant. 
+17, Abandoned: The application for the registration of a trademark has been abandoned.  This is an old code from the previous computer system which did not identify under which section the abandonment took place (section 36, 40(3), section 38). While this code exists for old abandoned applications, it should not occur for ongoing abandonments.
+18, Extension of Time Refused: The Trademarks Office has refused a request for an extension of time by the applicant.
+19, Extension of Time Refused - No Fee: The Trademarks Office has refused a request for an extension of time by the applicant for failure to pay the required fee.
+20, Examiners First Report: The examiner has completed the first report on the application for the registration of a trademark application.  
+22, Search Recorded: A detailed search for any potential impediments to the successful registration of the trademark application has been completed.
+23, Remove Default: The default status has been removed from the application.
+24, NUANS Search Recorded: A NUANS search (Innovation, Science and Economic Development Canadas corporations database search engine) has been completed for the application. This is an old code and the NUANS search is no longer performed by the Office.
+25, Search Removed: The search action has been removed.
+26, Approved: The application for the registration of a trademark has been approved by the Trademarks Office.
+27, Approval Notice Sent: An approval notice was sent to the applicant or his agent for his review of the information in the application for the registration of a trademark.
+28, Approval Removed: The approval status has been removed from the application.
+29, Accepted for Publication: The application for the registration of a section 9 mark has been accepted for publication in the Trade-marks Journal.  
+30, Filed: The date a complete application for the registration of a trademark has been filed with the Trademarks Office.
+31, Formalized: This action will come after the filed action. At this stage, the application has adhered to all of the rules and regulations for the format and content on the application.  The information can now be made available to the general public.
+32, Remove NUANS Report: The NUANS search report has been removed from the application.  
+33, Record Security Interest / License Agreement: A security interest or license agreement has been received and recorded by the Trademarks Office.
+34, Partial Ownership: Partial ownership by two parties sharing part or all of the rights to the use of the trademark.
+35, Remove Accept for Publication: The acceptance for publication in the Trademarks Journal has been removed for the application. 
+37, Amendment to Goods/Services: A change has been made to the goods and/or services for the registration.
+38, Abandoned - Voluntary Before Public Notice: The application for the registration of a trademark has been abandoned by the applicant before public notice.
+39, Abandoned Before Public Notice: The application for the registration of a trademark has been abandoned before public notice.
+40, Translation Requested: A translation for the other official language has been requested for the application. **No longer disseminated effective June 11, 2011**
+41, Translation Received: A translation for the other official language has been received for the application. **No longer disseminated effective June 11, 2011**
+42, Advertised: The mark is advertised (published) in the Trade-marks Journal.
+43, Re-advertisement Requested: Re-advertisement in the Trade-marks Journal has been requested for the application. This normally occurs due to a significant error in the original publication of the application.
+44, Erratum Requested: An erratum or mention of some minor correction to the application in the Trade-marks Journal has been requested.
+45, Erratum Published: The erratum or mention of some minor correction to the application has been made in the Trade-marks Journal.
+46, Section 37(3) Notice Sent: A notice is sent to the owner of an existing registration by the Trademarks Office when the Registrar is in doubt whether the new trademark application is registerable based on the existing registered mark.
+47, Advertisement Removed: The advertised status has been removed for the application.
+48, Agent Changed: The agent for the application has changed.
+49, Extracted for Advertisement: The application has been extracted from the Intrepid database for inclusion in the Trade-marks Journal.
+50, Allowed: The application for the registration of the trademark has been allowed. This occurs after the 2-month opposition period from advertisement has passed if no opposition has been filed or resolved.
+51, Allowance Notice Sent: An allowance notice has been sent to indicate that the application for the registration of the trademark has been allowed. Any additional registration requirement by the Trademarks Office that needs to be fulfilled for registration will be included in the allowance notice. This could include part or all of the following: a) request for registration fee payment; b) request for declaration of use for any proposed goods and or services included in the application.
+52, Allowance Removed: The allowance status has been removed from the application.
+53, Document Placed on File: Records that a document has been placed on the trademark file.
+54, Rights Revoked: The rights granted under the Plant Breeders Rights Act have been revoked/removed by the Canadian Food Inspection Agency.
+55, Registered: The trademark has been registered.
+56, Registration Removed: The registered status has been removed for the application.
+57, Amendment to Registration: An amendment has been made to the registration. This can consist of: - The addition or removal of goods and or services.  - A correction or change in the name, address or description of the registered owner or his representative for service.  - A cancelation of the registration.  - The addition of a disclaimer which does not extend the rights in any way.
+58, Refusal Removed: The status refused  awaiting appeal has been removed for the application.
+59, Second Renewal Notice Sent: A second renewal notice has been sent to the representative for service / current owner requesting renewal fees. This may occur when the Office sent the original renewal notice to an incorrect address while the correct address was on file.
+60, Renewal Notice Sent: A renewal notice has been sent to the representative for service / current owner requesting renewal fees.
+61, Renewed: The registration has been renewed by the Trademarks Office. The renewal period is 15 years from registration or the previous renewal.
+62, ExpungedFailure To Renew: The registered trademark has been expunged by the Trademarks Office for failure to renew.
+63, Renewal Removed: The renewal action was recorded in error. The renewal date will be rolled back to its previous date. The registration may be in a position to be expunged for failure to renew.
+64, Expungement Removed: The expungement status will be removed for the registration.
+65, Cancelled by Owner: The registration has been cancelled by the owner.
+66, Cancellation Removed: The cancellation status has been removed for the registration.
+67, Agent Name Change: Indicate that the name of the agent has changed. While action code 48 is an agent change, this action (67) indicates that, while the actual agent remained the same, there was a change in the agent name information.
+68, Rep for Service Name Change: Indicate that the name of the representative for service has changed. While action code 87 is a rep for service change, this action (68) indicates that, while the actual representative for service remained the same, there was a change in the representative for service name information.
+70, Opposed: The application for the registration of a trademark has been opposed.
+71, Opposition Removed: Any opposition against the trademark has been removed.
+72, Abandoned - Section 38 Opposition: The application for the registration of a trademark has been abandoned by the applicant during the opposition process. 
+73, Expunged - Non-use: The registration has been expunged for non-use.
+74, Granted: The plant variety name has been granted protection under the Plant Breeders Rights Act (PBRA). The Trade-marks Act precludes any infringement of a plant variety name (under the PBRA) by a trademark application.
+75, Automatic ExpungementFailure to Renew: The registered trademark has been expunged automatically for failure to renew.
+80, Change in Title Registered: A change in ownership has occurred for the application/registration.
+81, Owner Name Changed: A change in owners name has occurred for the application/registration.
+82, Owner Address Changed: A change in owners address has occurred for the application/registration.
+83, Assignment Correspondence Created: An assignment correspondence has been created for the file.
+84, Expunged - Court Order: The registration has been expunged by court order.
+85, Title Seized: The title to the ownership of the trademark has been seized.
+86, Released from Seizure: The seizure to the rights to the ownership of the trademark has been released.
+87, Rep for Service changed: The representative for service for the application/registration has changed.
+88, Security Interest Placed: A security interest has been placed on file.
+89, Security Interest Removed: The security interest has been removed from the file.
+90, Clerical Correction: A correction due to a clerical mistake has been made to the file.
+91, Cancelled - Section 50 UCA: The registration has been cancelled under section 50 of the Unfair Competition Act.
+92, Expunged - Failure to Provide Information: The registration has been expunged for failure to comply with a request for information by the Trademarks Office.
+93, Created by Transfer: The file was created as a result of a transfer of information from a previous file.
+94, Record License Agreement: A license agreement to the rights for use of the trademark to an additional party has been recorded.
+95, Remove License Agreement: The license agreement to the rights for use of the trademark by an additional party has been removed.
+96, Remove Expungement - Court Order: The expungement of the trademark has been removed following an order from the Federal Court.
+97, Cancelled - Section 23 UCA: The registration has been cancelled under section 23 of the Unfair Competition Act. 
+98, Cancelled - Section 48 UCA: The registration has been cancelled under section 48 of the Unfair Competition Act.
+99, Expunged - Failure to Provide Representation: The registration has been expunged by the Trademarks Office for failure to provide a representative for service.
+101, Rights Surrendered: The rights for the usage of a specific name for a plant variety under the PBRA (Plant Breeders Rights Act) mark have been surrendered by the owner.
+102, Contact Changed: A contact was either added or removed for a section 9 in advertised status.
+103, Requesting Party Name Changed: The name of the requesting party of a section 9 in advertised status was modified.
+104, Requesting Party Address Changed: The address of the requesting party of a section 9 in advertised status was modified.
+105, Requesting Party Name and Address Changed: The name and address of the requesting party of a section 9 in advertised status were modified.
+110, Proposed Opposition: An intention to oppose the application has been signified to the Trademarks Opposition Board, but no statement has been submitted to the Office.
+111, Remove Proposed Opposition: The intention to oppose the application has been removed.
+120, Entered on the List: A geographical indication has been entered on the list of protected GIs.
+121, Removed: A geographical indication has been removed from the list of protected GIs.
+123, Extracted for Canada Gazette: The geographical indication has been extracted for publication in the Canada Gazette. This code is for GIs that were published prior to Bill C30 coming into force.
+128, Refused - Section 38(8): The application for the registration of the trademark has been refused during an opposition.
+129, Refusal Letter Sent: A refusal letter has been sent to the agent / rep for service and applicant, informing them that their application for the registration of the trademark has been refused by the Registrar of trade-marks.
+130, Note to File: This action indicates that a note/comment/observation has been added to the trademark file. The additional information field will contain a brief description of the note.
+134, Refused - Awaiting Appeal: The application has been refused by the Trademarks Opposition Board, however either the 2-month appeal period has not passed or the refusal has been appealed to the Federal Court.
+135, Amendment to Application: The application has been modified while still pending.
+144, Remove Refusal Letter Sent: The refusal letter sent was removed, which resets the
+165, Appeal in Progress: This action indicates an appeal was filed on a refusal decision.
+166, Abandoned - Section 36 - Opp/S45: This action indicates the application was abandoned under section 36.
+167, Examiners First Report Removed: The examiners first report on the application for the registration of a trademark application has been removed.
+168, Erratum Extracted for Advertisement: The erratum has been extracted from the INTREPID database for inclusion in the next Trade-marks Journal.
+169, Not Recommended: This action indicates that an indication has not been recommended for entry on the list of geographical indications.
+170, Remove Not Recommended: The status Not Recommended has been removed for the geographical indication.
+171, Refused - Appeal in Progress: The application has been refused by the Office (either in examination or by the Trademarks Opposition Board), however, the refusal has been appealed to the Federal Court.
+172, Record Federal Court Proceeding Initiated: This action indicates that a Federal Court Proceeding has been initiated.
+173, Record Federal Court Proceeding Completed: This action indicates that a Federal Court Proceeding has been completed.
+174, Nice Classification Courtesy Letter Sent: A courtesy letter was sent to trademark owners inviting them to group and class their goods and/or services according to the classes of the Nice Classification
+175, Division recorded: This action indicates a division was created from this application. A new application number was given to the division.
+176, Created by Division: This action indicates that this application was created from the division of another application.
+177, Merger recorded: This action indicates that an application that was originally divided from this file was merged into back into it upon registration
+178, Adjusted Renewal Fee Notice Sent
+179, Adjusted Renewal Fee Received
+180, Deemed Never Filed: This action indicates that this application was inactivated due to the office not having received the information required to formalize the application by the response date given to the owner/agent.
+181, Remove Deemed Never Filed
+182, GI Translation Added
+183, Goods/Services Amended Section 57: This action indicates that the goods and/or services were amended as a result of the decision of a Federal Court Proceeding.
+184, Mark Upheld Section 57: This action indicates that the Federal Court Proceeding decision resulted in the application/registration being upheld.
+190, Registration Pending: This action indicates that the status the mark was changed to Registration Pending. This status comes after the advertisement period and replaced the Allowed status.
+191, Registration Fee Notice Sent
+192, Remove Registration Pending
+201, WIPO Clarification Requested
+202, WIPO Clarification Received
+203, IR Replacement Request Received: This action indicates that the owner requested that their Protocol registration replace their domestic registration.
+204, Correspondence Created
+205, IR Replacement: This action indicates that the Protocol registration replaced the domestic Trademark registration. The Protocol registration therefore gained the original date of protection of the goods and/or services found in the domestic application.
+206, Replaced by IR Mark: This action indicates that a Protocol registration replaced this domestic Trademark registration. The Protocol registration therefore gained the original date of protection of the goods and/or services found in the domestic application.
+207, MF6 Sent: This action indicates that a Final Disposition on Status of a Mark Confirmation of Total Provisional Refusal (MF6) form was sent to the World Intellectual Property Organization upon the inactivation of a Protocol application/registration.
+208, IR Correction Requested: This action indicates that the office communicated with the World Intellectual Property Organization to request a correction.
+209, MF2 Removed: This action indicates that the office communicated with the World Intellectual Property Organization upon the removal of the advertisement of a Protocol application.
+219, WIPO Clarification Request Outstanding Sent
+220, Abandoned - Section 36 Sent:
+221, MF6 Removed: This action indicates that the office communicated with the World Intellectual Property Organization upon the reinstatement of a Protocol application/registration.
+222, MF2 Sent: This action indicates that a Dates on Which Opposition Period Begins and Ends (MF2) form was sent to the World Intellectual Property Organization upon the advertisement of a Protocol application.
+223, MF3 Sent: This action indicates that a Total Provisional Refusal of Protection (MF3a) form was sent to the World Intellectual Property Organization upon the owner/agent of a Protocol Application receiving an Examiners report with new grounds or a Statement of Opposition.
+224, Invalidation (Full) Sent: This action indicates that an Invalidation (MF10) form was sent to the World Intellectual Property Organization upon the registration being expunged as a result of a Section 44 or Section 45 proceeding.
+225, Invalidation (Partial) Sent: This action indicates that an Invalidation (MF10) form was sent to the World Intellectual Property Organization upon the amendment of goods and/or services of a registration as a result of a Section 45 proceeding.
+226, Created via Madrid Transformation
+227, Expunged - Failure to Provide Additional Renewal Fee
+228, International Registration: This action indicates that the owner filed an application for international registration using this Trademark as a base and that the international application is now registered.
+229, Partial Cancellation - Registered Owner's Request: This action indicates that the owner of the Protocol registration requested to the World Intellectual Property Organization that their registration be cancelled.
+230, Partial Withdrawal - Registered Owner's Request: This action indicates that the owner of the Protocol application requested to the World Intellectual Property Organization that their application be withdrawn.
+231, Limitation - All Goods/Services: A Madrid limitation request has affected all the goods/services designated to Canada.
+232, Limitation - Partial Goods/Services: A Madrid limitation request has affected only some of the goods/services designated to Canada.
+233, Limitation - No Effect: A Madrid limitation request did not affect the goods/services designated to Canada.
+234, Partial Ceasing of Effect Received - No Effect: A Madrid partial ceasing of effect request did not affect the goods/services designated to Canada.
+235, Partial Cancellation: A Madrid partial cancellation of the goods/services designated to Canada.
+236, Partial Withdrawal: A Madrid partial withdrawal of the goods/services designated to Canada.
+237, Remove Withdrawn: A previous withdrawal action has been removed.
+238, IR Renewed: This action indicates that the International Registration of this Protocol application/registration was renewed. This action may happen before the registration of the trademark in Canada.
+239, Withdrawn - Failure to Renew: This action indicates that the International Registration of this Protocol application was not renewed. As a result, the Canadian application process was withdrawn.
+241, Remove Change of Name
+242, Remove Assignment  Transfer
+243, Ownership Change Merger
+244, Requirement To Furnish Statement Under Subsection 44.1(1) Sent
+245, Failure To Furnish Statement Under Subsection 44.1(1) 
+246, Expunged for Failure To Furnish Statement Under Subsection 44.1(1)
+247, Acknowledgement of Letter of Protest Recorded
+248, Acknowledgement of Letter of Protest Removed
+249, Withdrawn: The Application has been Withdrawn.
+250, Cancelled: The Application has been Cancelled.
+251, MF4 Sent: This action indicates that a Final Disposition on Status of a Mark  Statement of Total Grant of Protection (MF4) form was sent to the World Intellectual Property Organization upon the registration of a Protocol Application.
+252, MF5 Sent: This action indicates that a Final Disposition on Status of a Mark  Statement of Total or Partial Grant of Protection Following a Provisional Refusal (MF5) form was sent to the World Intellectual Property Organization upon the registration of a Protocol Application.
+253, MF7 Sent: This action indicates that a Further Decision Affecting the Protection of a Mark (MF7) form was sent to the World Intellectual Property Organization upon the registration of a Protocol Application.
+254, Partial Cancellation Received - No Adjustment: A Madrid partial cancellation request did not affect the goods/services designated to Canada.
+255, IR Notification Filed: The Madrid notification has been recorded on the Canadian designated file.
+256, MF1 Sent : This action indicates that Information Relating to Possible Oppositions (Rule 16 of the Common Regulations) form was sent to the World Intellectual Property Organization.
+257, Madrid Designation Notification: This is the date that the World Intellectual Property Organization of a Madrid Designation.
+258, Restriction Recorded: This action indicates that the goods/services for the international registration have been restricted in the designated party (Canada).
+259, Invalidation (IV) Removed: This action indicates that an invalidation of goods and services for the international registration has been removed. 

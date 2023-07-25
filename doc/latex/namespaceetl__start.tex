@@ -1,0 +1,248 @@
+\hypertarget{namespaceetl__start}{}\doxysection{etl\+\_\+start Namespace Reference}
+\label{namespaceetl__start}\index{etl\_start@{etl\_start}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceetl__start_a4fba8efa872a331c05dc5a9a7aeae1f9}{check\+\_\+type}} (value)
+\begin{DoxyCompactList}\small\item\em --type C\+LI parameter validation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceetl__start_a5a5789bf9f3829a50ea7cd492d8340e4}{check\+\_\+mode}} (value)
+\begin{DoxyCompactList}\small\item\em --mode C\+LI parameter validation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceetl__start_a28ef9fc5ba4e69244ba33acd1cef671f}{check\+\_\+year}} (value)
+\begin{DoxyCompactList}\small\item\em --year C\+LI parameter validation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceetl__start_aec53a8d42daa0a5107e9207810ee571b}{load\+\_\+proc}} (year, ftype, all\+\_\+files=None, tor=None)
+\begin{DoxyCompactList}\small\item\em Start loading process. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceetl__start_ab7019ed4a08409ba038968cb322d5d31}{parse\+\_\+proc}} (year, ftype, all\+\_\+files=None, tor=None)
+\begin{DoxyCompactList}\small\item\em Start parsing process. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceetl__start_a32ba09801c5d72ac42972878056fb0aa}{get\+\_\+mail\+\_\+params}} (ftype, mode, rfile)
+\begin{DoxyCompactList}\small\item\em Get credential for E\+Mail notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceetl__start_a39a1a915d9357a1df7f966de5111be67}{descr}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_af63519c69a023cde230123d1ed689db4}{arg\+\_\+parser}} = argparse.\+Argument\+Parser(description=\mbox{\hyperlink{namespaceetl__start_a39a1a915d9357a1df7f966de5111be67}{descr}})
+\item 
+\mbox{\hyperlink{namespaceetl__start_a5184a80a107a7db28c0003c5d58eb552}{type}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a9abebf8cef81bf7c7c45c3ef5a58ab94}{default}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a48b049653ad9b6751c80833953bdbb31}{help}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a409dabdf75d36dc156d55ddcf1bdddb1}{action}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a1e3f4ed06ee082968956f532e63617d0}{args}} = arg\+\_\+parser.\+parse\+\_\+args()
+\item 
+tuple \mbox{\hyperlink{namespaceetl__start_a997fa42b3369a7795f93e45dd60df696}{log\+\_\+file\+\_\+name}}
+\item 
+tuple \mbox{\hyperlink{namespaceetl__start_af79017e9d0655049731e4a087b307e76}{log\+\_\+file\+\_\+name2}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a5c0bc6f1129c8ebd1d695dda66e7fe6a}{format}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a40cddbea72a4a26bbc5199fbfda31048}{level}}
+\item 
+\mbox{\hyperlink{namespaceetl__start_a65192ff1fed877caf04fe6d0b3eb282b}{log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceetl__start_a5e1356fb6d8061c1d1e5a563b6282573}{root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespaceetl__start_a30f37ef9b1a6a02bdf1a06069185c4d2}{file\+Handler}} = logging.\+File\+Handler(\mbox{\hyperlink{namespaceetl__start_a997fa42b3369a7795f93e45dd60df696}{log\+\_\+file\+\_\+name}})
+\item 
+\mbox{\hyperlink{namespaceetl__start_a843df28d59940d6050dee0863c2dfed3}{email\+Handler}} = logging.\+File\+Handler(\mbox{\hyperlink{namespaceetl__start_af79017e9d0655049731e4a087b307e76}{log\+\_\+file\+\_\+name2}})
+\item 
+tuple \mbox{\hyperlink{namespaceetl__start_af360038199f21ae4f69c2f706634ed05}{arg}} = (args.\+year, args.\+type, args.\+full, args.\+tor)
+\item 
+dictionary \mbox{\hyperlink{namespaceetl__start_ad88fc58822fd52afdc2b05b8ac187745}{proc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceetl__start_a5a5789bf9f3829a50ea7cd492d8340e4}\label{namespaceetl__start_a5a5789bf9f3829a50ea7cd492d8340e4}} 
+\index{etl\_start@{etl\_start}!check\_mode@{check\_mode}}
+\index{check\_mode@{check\_mode}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{check\_mode()}{check\_mode()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+check\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+--mode C\+LI parameter validation 
+
+\mbox{\Hypertarget{namespaceetl__start_a4fba8efa872a331c05dc5a9a7aeae1f9}\label{namespaceetl__start_a4fba8efa872a331c05dc5a9a7aeae1f9}} 
+\index{etl\_start@{etl\_start}!check\_type@{check\_type}}
+\index{check\_type@{check\_type}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{check\_type()}{check\_type()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+check\+\_\+type (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+--type C\+LI parameter validation 
+
+\mbox{\Hypertarget{namespaceetl__start_a28ef9fc5ba4e69244ba33acd1cef671f}\label{namespaceetl__start_a28ef9fc5ba4e69244ba33acd1cef671f}} 
+\index{etl\_start@{etl\_start}!check\_year@{check\_year}}
+\index{check\_year@{check\_year}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{check\_year()}{check\_year()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+check\+\_\+year (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+--year C\+LI parameter validation 
+
+\mbox{\Hypertarget{namespaceetl__start_a32ba09801c5d72ac42972878056fb0aa}\label{namespaceetl__start_a32ba09801c5d72ac42972878056fb0aa}} 
+\index{etl\_start@{etl\_start}!get\_mail\_params@{get\_mail\_params}}
+\index{get\_mail\_params@{get\_mail\_params}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{get\_mail\_params()}{get\_mail\_params()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+get\+\_\+mail\+\_\+params (\begin{DoxyParamCaption}\item[{}]{ftype,  }\item[{}]{mode,  }\item[{}]{rfile }\end{DoxyParamCaption})}
+
+
+
+Get credential for E\+Mail notification. 
+
+\mbox{\Hypertarget{namespaceetl__start_aec53a8d42daa0a5107e9207810ee571b}\label{namespaceetl__start_aec53a8d42daa0a5107e9207810ee571b}} 
+\index{etl\_start@{etl\_start}!load\_proc@{load\_proc}}
+\index{load\_proc@{load\_proc}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{load\_proc()}{load\_proc()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+load\+\_\+proc (\begin{DoxyParamCaption}\item[{}]{year,  }\item[{}]{ftype,  }\item[{}]{all\+\_\+files = {\ttfamily None},  }\item[{}]{tor = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Start loading process. 
+
+\mbox{\Hypertarget{namespaceetl__start_ab7019ed4a08409ba038968cb322d5d31}\label{namespaceetl__start_ab7019ed4a08409ba038968cb322d5d31}} 
+\index{etl\_start@{etl\_start}!parse\_proc@{parse\_proc}}
+\index{parse\_proc@{parse\_proc}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{parse\_proc()}{parse\_proc()}}
+{\footnotesize\ttfamily def etl\+\_\+start.\+parse\+\_\+proc (\begin{DoxyParamCaption}\item[{}]{year,  }\item[{}]{ftype,  }\item[{}]{all\+\_\+files = {\ttfamily None},  }\item[{}]{tor = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Start parsing process. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceetl__start_a409dabdf75d36dc156d55ddcf1bdddb1}\label{namespaceetl__start_a409dabdf75d36dc156d55ddcf1bdddb1}} 
+\index{etl\_start@{etl\_start}!action@{action}}
+\index{action@{action}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily etl\+\_\+start.\+action}
+
+\mbox{\Hypertarget{namespaceetl__start_af360038199f21ae4f69c2f706634ed05}\label{namespaceetl__start_af360038199f21ae4f69c2f706634ed05}} 
+\index{etl\_start@{etl\_start}!arg@{arg}}
+\index{arg@{arg}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{arg}{arg}}
+{\footnotesize\ttfamily tuple etl\+\_\+start.\+arg = (args.\+year, args.\+type, args.\+full, args.\+tor)}
+
+\mbox{\Hypertarget{namespaceetl__start_af63519c69a023cde230123d1ed689db4}\label{namespaceetl__start_af63519c69a023cde230123d1ed689db4}} 
+\index{etl\_start@{etl\_start}!arg\_parser@{arg\_parser}}
+\index{arg\_parser@{arg\_parser}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{arg\_parser}{arg\_parser}}
+{\footnotesize\ttfamily etl\+\_\+start.\+arg\+\_\+parser = argparse.\+Argument\+Parser(description=\mbox{\hyperlink{namespaceetl__start_a39a1a915d9357a1df7f966de5111be67}{descr}})}
+
+\mbox{\Hypertarget{namespaceetl__start_a1e3f4ed06ee082968956f532e63617d0}\label{namespaceetl__start_a1e3f4ed06ee082968956f532e63617d0}} 
+\index{etl\_start@{etl\_start}!args@{args}}
+\index{args@{args}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily etl\+\_\+start.\+args = arg\+\_\+parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespaceetl__start_a9abebf8cef81bf7c7c45c3ef5a58ab94}\label{namespaceetl__start_a9abebf8cef81bf7c7c45c3ef5a58ab94}} 
+\index{etl\_start@{etl\_start}!default@{default}}
+\index{default@{default}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily etl\+\_\+start.\+default}
+
+\mbox{\Hypertarget{namespaceetl__start_a39a1a915d9357a1df7f966de5111be67}\label{namespaceetl__start_a39a1a915d9357a1df7f966de5111be67}} 
+\index{etl\_start@{etl\_start}!descr@{descr}}
+\index{descr@{descr}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{descr}{descr}}
+{\footnotesize\ttfamily tuple etl\+\_\+start.\+descr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'IPV Patent information files Downloader\&Parser v0.1\(\backslash\)n'}}
+\DoxyCodeLine{2                  \textcolor{stringliteral}{'Author: Alex Kovalsky'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceetl__start_a843df28d59940d6050dee0863c2dfed3}\label{namespaceetl__start_a843df28d59940d6050dee0863c2dfed3}} 
+\index{etl\_start@{etl\_start}!emailHandler@{emailHandler}}
+\index{emailHandler@{emailHandler}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{emailHandler}{emailHandler}}
+{\footnotesize\ttfamily etl\+\_\+start.\+email\+Handler = logging.\+File\+Handler(\mbox{\hyperlink{namespaceetl__start_af79017e9d0655049731e4a087b307e76}{log\+\_\+file\+\_\+name2}})}
+
+\mbox{\Hypertarget{namespaceetl__start_a30f37ef9b1a6a02bdf1a06069185c4d2}\label{namespaceetl__start_a30f37ef9b1a6a02bdf1a06069185c4d2}} 
+\index{etl\_start@{etl\_start}!fileHandler@{fileHandler}}
+\index{fileHandler@{fileHandler}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{fileHandler}{fileHandler}}
+{\footnotesize\ttfamily etl\+\_\+start.\+file\+Handler = logging.\+File\+Handler(\mbox{\hyperlink{namespaceetl__start_a997fa42b3369a7795f93e45dd60df696}{log\+\_\+file\+\_\+name}})}
+
+\mbox{\Hypertarget{namespaceetl__start_a5c0bc6f1129c8ebd1d695dda66e7fe6a}\label{namespaceetl__start_a5c0bc6f1129c8ebd1d695dda66e7fe6a}} 
+\index{etl\_start@{etl\_start}!format@{format}}
+\index{format@{format}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily etl\+\_\+start.\+format}
+
+\mbox{\Hypertarget{namespaceetl__start_a48b049653ad9b6751c80833953bdbb31}\label{namespaceetl__start_a48b049653ad9b6751c80833953bdbb31}} 
+\index{etl\_start@{etl\_start}!help@{help}}
+\index{help@{help}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily etl\+\_\+start.\+help}
+
+\mbox{\Hypertarget{namespaceetl__start_a40cddbea72a4a26bbc5199fbfda31048}\label{namespaceetl__start_a40cddbea72a4a26bbc5199fbfda31048}} 
+\index{etl\_start@{etl\_start}!level@{level}}
+\index{level@{level}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily etl\+\_\+start.\+level}
+
+\mbox{\Hypertarget{namespaceetl__start_a997fa42b3369a7795f93e45dd60df696}\label{namespaceetl__start_a997fa42b3369a7795f93e45dd60df696}} 
+\index{etl\_start@{etl\_start}!log\_file\_name@{log\_file\_name}}
+\index{log\_file\_name@{log\_file\_name}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{log\_file\_name}{log\_file\_name}}
+{\footnotesize\ttfamily tuple etl\+\_\+start.\+log\+\_\+file\+\_\+name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'./log/\%s\_\%s\_\%s.log'}) \% (args.type,}
+\DoxyCodeLine{2                                                args.mode,}
+\DoxyCodeLine{3                                                str(datetime.now())[2:19].replace(\textcolor{stringliteral}{' '},\textcolor{stringliteral}{'\_'}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceetl__start_af79017e9d0655049731e4a087b307e76}\label{namespaceetl__start_af79017e9d0655049731e4a087b307e76}} 
+\index{etl\_start@{etl\_start}!log\_file\_name2@{log\_file\_name2}}
+\index{log\_file\_name2@{log\_file\_name2}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{log\_file\_name2}{log\_file\_name2}}
+{\footnotesize\ttfamily tuple etl\+\_\+start.\+log\+\_\+file\+\_\+name2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'./log/\%s\_\%s\_\%s\_email.log'}) \% (args.type,}
+\DoxyCodeLine{2                                                args.mode,}
+\DoxyCodeLine{3                                                str(datetime.now())[2:19].replace(\textcolor{stringliteral}{' '},\textcolor{stringliteral}{'\_'}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceetl__start_a65192ff1fed877caf04fe6d0b3eb282b}\label{namespaceetl__start_a65192ff1fed877caf04fe6d0b3eb282b}} 
+\index{etl\_start@{etl\_start}!logFormatter@{logFormatter}}
+\index{logFormatter@{logFormatter}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{logFormatter}{logFormatter}}
+{\footnotesize\ttfamily etl\+\_\+start.\+log\+Formatter = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceetl__start_ad88fc58822fd52afdc2b05b8ac187745}\label{namespaceetl__start_ad88fc58822fd52afdc2b05b8ac187745}} 
+\index{etl\_start@{etl\_start}!proc@{proc}}
+\index{proc@{proc}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{proc}{proc}}
+{\footnotesize\ttfamily dictionary etl\+\_\+start.\+proc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{\textcolor{stringliteral}{'load'} : load\_proc,}
+\DoxyCodeLine{2                 \textcolor{stringliteral}{'parse'}: parse\_proc\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceetl__start_a5e1356fb6d8061c1d1e5a563b6282573}\label{namespaceetl__start_a5e1356fb6d8061c1d1e5a563b6282573}} 
+\index{etl\_start@{etl\_start}!rootLogger@{rootLogger}}
+\index{rootLogger@{rootLogger}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{rootLogger}{rootLogger}}
+{\footnotesize\ttfamily etl\+\_\+start.\+root\+Logger = logging.\+get\+Logger()}
+
+\mbox{\Hypertarget{namespaceetl__start_a5184a80a107a7db28c0003c5d58eb552}\label{namespaceetl__start_a5184a80a107a7db28c0003c5d58eb552}} 
+\index{etl\_start@{etl\_start}!type@{type}}
+\index{type@{type}!etl\_start@{etl\_start}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily etl\+\_\+start.\+type}
+

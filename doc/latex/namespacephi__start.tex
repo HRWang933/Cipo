@@ -1,0 +1,253 @@
+\hypertarget{namespacephi__start}{}\doxysection{phi\+\_\+start Namespace Reference}
+\label{namespacephi__start}\index{phi\_start@{phi\_start}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_browser}{Browser}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_stat}{Stat}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1wait__for__non__empty__text}{wait\+\_\+for\+\_\+non\+\_\+empty\+\_\+text}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_worker}{Worker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacephi__start_a425196eeffb138e7055fda3120ddff7c}{write\+\_\+local}} (arr, \mbox{\hyperlink{namespacephi__start_a6a55746c4c890a23ccf0ef57a394e313}{name}})
+\item 
+def \mbox{\hyperlink{namespacephi__start_a2494a04caa4062d4a31dd7133f69617b}{run\+\_\+query}} (query)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ae85e2e709ed646269bbf8c015c7e8b9a}{get\+\_\+partitions}} (years)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ad914505ae8df485692206a523b05f675}{get\+\_\+ids}} (partition)
+\item 
+def \mbox{\hyperlink{namespacephi__start_a4a7318f742575714c6b73371676251a9}{split\+\_\+result}} (result, partition)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ac76fb3dd76a6471b91e86fba37114522}{get\+\_\+tasks}} ()
+\item 
+def \mbox{\hyperlink{namespacephi__start_aa244725efe52437f269b293b07ac6b4d}{get\+\_\+mail\+\_\+params}} (rfile)
+\begin{DoxyCompactList}\small\item\em Get credential for E\+Mail notification. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}{start\+\_\+queue}} (\mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacephi__start_a9e00c95274959ec596a4685363af63e2}{t}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacephi__start_a4146bada5aa9b39b81b8e99a3cb1f973}{format}}
+\item 
+\mbox{\hyperlink{namespacephi__start_ab019961007d4523b29f00c2fbe7df04d}{level}}
+\item 
+tuple \mbox{\hyperlink{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}{log\+\_\+file\+\_\+name}} = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespacephi__start_affa86deb1d9e176c048524761e1aadc1}{log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacephi__start_a2fffb0cd4cc2a8f3b847796d24a0ffda}{root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespacephi__start_a5758f9699dec2f2cdce8a0c015a82eab}{file\+Handler}} = logging.\+File\+Handler(\mbox{\hyperlink{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}{log\+\_\+file\+\_\+name}})
+\item 
+dictionary \mbox{\hyperlink{namespacephi__start_a3f4228074ab75e2eae8c50304d22568e}{properties}} = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}
+\item 
+\mbox{\hyperlink{namespacephi__start_a25a7f3a87c8b00596a3b3d4e9fe59687}{cfg}} = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacephi__start_a6fc908ef853ce7b3dbda27018f5b80e0}{models}} = cfg.\+active\+\_\+models
+\item 
+\mbox{\hyperlink{namespacephi__start_aeba1ba08f2177e76c149ea168228f98a}{start}} = time.\+time()
+\item 
+def \mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}} = \mbox{\hyperlink{namespacephi__start_ad914505ae8df485692206a523b05f675}{get\+\_\+ids}}(partition)
+\item 
+\mbox{\hyperlink{namespacephi__start_a3497fa3000f4fe3e5f9be64f28b35292}{st\+\_\+data}} = \mbox{\hyperlink{classphi__start_1_1_stat}{Stat}}(len(\mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}}))
+\item 
+def \mbox{\hyperlink{namespacephi__start_a6dee3a51bc4e35d9815920775119c500}{final}} = \mbox{\hyperlink{namespacephi__start_a4a7318f742575714c6b73371676251a9}{split\+\_\+result}}(\mbox{\hyperlink{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}{start\+\_\+queue}}(\mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}}), partition)
+\item 
+\mbox{\hyperlink{namespacephi__start_a29757c3aa2d9bfef580e4b69045095d5}{hdfs\+\_\+conn}} = parser.\+hdfs\+\_\+connect()
+\item 
+string \mbox{\hyperlink{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}{res\+\_\+path}} = \textquotesingle{}./log/phi/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacephi__start_a560ec924eef243f52549bb093a241ee7}{marker}} = str(int(time.\+time()))
+\item 
+dictionary \mbox{\hyperlink{namespacephi__start_a5d164a8b61d5c45d8ddd30a3cbd8e85c}{logarr}}
+\item 
+tuple \mbox{\hyperlink{namespacephi__start_a6a55746c4c890a23ccf0ef57a394e313}{name}} = (\textquotesingle{}\%s\%s\+\_\+\%s.\+log\textquotesingle{}) \% (\mbox{\hyperlink{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}{res\+\_\+path}}, elm, partition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacephi__start_ad914505ae8df485692206a523b05f675}\label{namespacephi__start_ad914505ae8df485692206a523b05f675}} 
+\index{phi\_start@{phi\_start}!get\_ids@{get\_ids}}
+\index{get\_ids@{get\_ids}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{get\_ids()}{get\_ids()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+get\+\_\+ids (\begin{DoxyParamCaption}\item[{}]{partition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_aa244725efe52437f269b293b07ac6b4d}\label{namespacephi__start_aa244725efe52437f269b293b07ac6b4d}} 
+\index{phi\_start@{phi\_start}!get\_mail\_params@{get\_mail\_params}}
+\index{get\_mail\_params@{get\_mail\_params}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{get\_mail\_params()}{get\_mail\_params()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+get\+\_\+mail\+\_\+params (\begin{DoxyParamCaption}\item[{}]{rfile }\end{DoxyParamCaption})}
+
+
+
+Get credential for E\+Mail notification. 
+
+\mbox{\Hypertarget{namespacephi__start_ae85e2e709ed646269bbf8c015c7e8b9a}\label{namespacephi__start_ae85e2e709ed646269bbf8c015c7e8b9a}} 
+\index{phi\_start@{phi\_start}!get\_partitions@{get\_partitions}}
+\index{get\_partitions@{get\_partitions}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{get\_partitions()}{get\_partitions()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+get\+\_\+partitions (\begin{DoxyParamCaption}\item[{}]{years }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_ac76fb3dd76a6471b91e86fba37114522}\label{namespacephi__start_ac76fb3dd76a6471b91e86fba37114522}} 
+\index{phi\_start@{phi\_start}!get\_tasks@{get\_tasks}}
+\index{get\_tasks@{get\_tasks}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{get\_tasks()}{get\_tasks()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+get\+\_\+tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_a2494a04caa4062d4a31dd7133f69617b}\label{namespacephi__start_a2494a04caa4062d4a31dd7133f69617b}} 
+\index{phi\_start@{phi\_start}!run\_query@{run\_query}}
+\index{run\_query@{run\_query}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{run\_query()}{run\_query()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+run\+\_\+query (\begin{DoxyParamCaption}\item[{}]{query }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_a4a7318f742575714c6b73371676251a9}\label{namespacephi__start_a4a7318f742575714c6b73371676251a9}} 
+\index{phi\_start@{phi\_start}!split\_result@{split\_result}}
+\index{split\_result@{split\_result}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{split\_result()}{split\_result()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+split\+\_\+result (\begin{DoxyParamCaption}\item[{}]{result,  }\item[{}]{partition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}\label{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}} 
+\index{phi\_start@{phi\_start}!start\_queue@{start\_queue}}
+\index{start\_queue@{start\_queue}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{start\_queue()}{start\_queue()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+start\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{ids }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacephi__start_a425196eeffb138e7055fda3120ddff7c}\label{namespacephi__start_a425196eeffb138e7055fda3120ddff7c}} 
+\index{phi\_start@{phi\_start}!write\_local@{write\_local}}
+\index{write\_local@{write\_local}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{write\_local()}{write\_local()}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+write\+\_\+local (\begin{DoxyParamCaption}\item[{}]{arr,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacephi__start_a25a7f3a87c8b00596a3b3d4e9fe59687}\label{namespacephi__start_a25a7f3a87c8b00596a3b3d4e9fe59687}} 
+\index{phi\_start@{phi\_start}!cfg@{cfg}}
+\index{cfg@{cfg}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{cfg}{cfg}}
+{\footnotesize\ttfamily phi\+\_\+start.\+cfg = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacephi__start_a5758f9699dec2f2cdce8a0c015a82eab}\label{namespacephi__start_a5758f9699dec2f2cdce8a0c015a82eab}} 
+\index{phi\_start@{phi\_start}!fileHandler@{fileHandler}}
+\index{fileHandler@{fileHandler}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{fileHandler}{fileHandler}}
+{\footnotesize\ttfamily phi\+\_\+start.\+file\+Handler = logging.\+File\+Handler(\mbox{\hyperlink{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}{log\+\_\+file\+\_\+name}})}
+
+\mbox{\Hypertarget{namespacephi__start_a6dee3a51bc4e35d9815920775119c500}\label{namespacephi__start_a6dee3a51bc4e35d9815920775119c500}} 
+\index{phi\_start@{phi\_start}!final@{final}}
+\index{final@{final}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{final}{final}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+final = \mbox{\hyperlink{namespacephi__start_a4a7318f742575714c6b73371676251a9}{split\+\_\+result}}(\mbox{\hyperlink{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}{start\+\_\+queue}}(\mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}}), partition)}
+
+\mbox{\Hypertarget{namespacephi__start_a4146bada5aa9b39b81b8e99a3cb1f973}\label{namespacephi__start_a4146bada5aa9b39b81b8e99a3cb1f973}} 
+\index{phi\_start@{phi\_start}!format@{format}}
+\index{format@{format}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily phi\+\_\+start.\+format}
+
+\mbox{\Hypertarget{namespacephi__start_a29757c3aa2d9bfef580e4b69045095d5}\label{namespacephi__start_a29757c3aa2d9bfef580e4b69045095d5}} 
+\index{phi\_start@{phi\_start}!hdfs\_conn@{hdfs\_conn}}
+\index{hdfs\_conn@{hdfs\_conn}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{hdfs\_conn}{hdfs\_conn}}
+{\footnotesize\ttfamily phi\+\_\+start.\+hdfs\+\_\+conn = parser.\+hdfs\+\_\+connect()}
+
+\mbox{\Hypertarget{namespacephi__start_a443e524ba79a377542b17988f2891200}\label{namespacephi__start_a443e524ba79a377542b17988f2891200}} 
+\index{phi\_start@{phi\_start}!ids@{ids}}
+\index{ids@{ids}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily def phi\+\_\+start.\+ids = \mbox{\hyperlink{namespacephi__start_ad914505ae8df485692206a523b05f675}{get\+\_\+ids}}(partition)}
+
+\mbox{\Hypertarget{namespacephi__start_ab019961007d4523b29f00c2fbe7df04d}\label{namespacephi__start_ab019961007d4523b29f00c2fbe7df04d}} 
+\index{phi\_start@{phi\_start}!level@{level}}
+\index{level@{level}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily phi\+\_\+start.\+level}
+
+\mbox{\Hypertarget{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}\label{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}} 
+\index{phi\_start@{phi\_start}!log\_file\_name@{log\_file\_name}}
+\index{log\_file\_name@{log\_file\_name}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{log\_file\_name}{log\_file\_name}}
+{\footnotesize\ttfamily tuple phi\+\_\+start.\+log\+\_\+file\+\_\+name = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacephi__start_a5d164a8b61d5c45d8ddd30a3cbd8e85c}\label{namespacephi__start_a5d164a8b61d5c45d8ddd30a3cbd8e85c}} 
+\index{phi\_start@{phi\_start}!logarr@{logarr}}
+\index{logarr@{logarr}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{logarr}{logarr}}
+{\footnotesize\ttfamily dictionary phi\+\_\+start.\+logarr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2             \textcolor{stringliteral}{'failed\_ids'}: st\_data.failed\_ids,}
+\DoxyCodeLine{3             \textcolor{stringliteral}{'inconsist'}: st\_data.inconsist,}
+\DoxyCodeLine{4             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacephi__start_affa86deb1d9e176c048524761e1aadc1}\label{namespacephi__start_affa86deb1d9e176c048524761e1aadc1}} 
+\index{phi\_start@{phi\_start}!logFormatter@{logFormatter}}
+\index{logFormatter@{logFormatter}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{logFormatter}{logFormatter}}
+{\footnotesize\ttfamily phi\+\_\+start.\+log\+Formatter = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacephi__start_a560ec924eef243f52549bb093a241ee7}\label{namespacephi__start_a560ec924eef243f52549bb093a241ee7}} 
+\index{phi\_start@{phi\_start}!marker@{marker}}
+\index{marker@{marker}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{marker}{marker}}
+{\footnotesize\ttfamily phi\+\_\+start.\+marker = str(int(time.\+time()))}
+
+\mbox{\Hypertarget{namespacephi__start_a6fc908ef853ce7b3dbda27018f5b80e0}\label{namespacephi__start_a6fc908ef853ce7b3dbda27018f5b80e0}} 
+\index{phi\_start@{phi\_start}!models@{models}}
+\index{models@{models}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily dictionary phi\+\_\+start.\+models = cfg.\+active\+\_\+models}
+
+\mbox{\Hypertarget{namespacephi__start_a6a55746c4c890a23ccf0ef57a394e313}\label{namespacephi__start_a6a55746c4c890a23ccf0ef57a394e313}} 
+\index{phi\_start@{phi\_start}!name@{name}}
+\index{name@{name}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily tuple phi\+\_\+start.\+name = (\textquotesingle{}\%s\%s\+\_\+\%s.\+log\textquotesingle{}) \% (\mbox{\hyperlink{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}{res\+\_\+path}}, elm, partition)}
+
+\mbox{\Hypertarget{namespacephi__start_a3f4228074ab75e2eae8c50304d22568e}\label{namespacephi__start_a3f4228074ab75e2eae8c50304d22568e}} 
+\index{phi\_start@{phi\_start}!properties@{properties}}
+\index{properties@{properties}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily dictionary phi\+\_\+start.\+properties = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}}
+
+\mbox{\Hypertarget{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}\label{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}} 
+\index{phi\_start@{phi\_start}!res\_path@{res\_path}}
+\index{res\_path@{res\_path}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{res\_path}{res\_path}}
+{\footnotesize\ttfamily string phi\+\_\+start.\+res\+\_\+path = \textquotesingle{}./log/phi/\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacephi__start_a2fffb0cd4cc2a8f3b847796d24a0ffda}\label{namespacephi__start_a2fffb0cd4cc2a8f3b847796d24a0ffda}} 
+\index{phi\_start@{phi\_start}!rootLogger@{rootLogger}}
+\index{rootLogger@{rootLogger}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{rootLogger}{rootLogger}}
+{\footnotesize\ttfamily phi\+\_\+start.\+root\+Logger = logging.\+get\+Logger()}
+
+\mbox{\Hypertarget{namespacephi__start_a3497fa3000f4fe3e5f9be64f28b35292}\label{namespacephi__start_a3497fa3000f4fe3e5f9be64f28b35292}} 
+\index{phi\_start@{phi\_start}!st\_data@{st\_data}}
+\index{st\_data@{st\_data}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{st\_data}{st\_data}}
+{\footnotesize\ttfamily phi\+\_\+start.\+st\+\_\+data = \mbox{\hyperlink{classphi__start_1_1_stat}{Stat}}(len(\mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{ids}}))}
+
+\mbox{\Hypertarget{namespacephi__start_aeba1ba08f2177e76c149ea168228f98a}\label{namespacephi__start_aeba1ba08f2177e76c149ea168228f98a}} 
+\index{phi\_start@{phi\_start}!start@{start}}
+\index{start@{start}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily phi\+\_\+start.\+start = time.\+time()}
+
+\mbox{\Hypertarget{namespacephi__start_a9e00c95274959ec596a4685363af63e2}\label{namespacephi__start_a9e00c95274959ec596a4685363af63e2}} 
+\index{phi\_start@{phi\_start}!t@{t}}
+\index{t@{t}!phi\_start@{phi\_start}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily phi\+\_\+start.\+t = time.\+time()}
+

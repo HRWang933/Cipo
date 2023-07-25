@@ -1,0 +1,19 @@
+\hypertarget{classepo_table_border}{}\doxysection{epo\+Table\+Border Class Reference}
+\label{classepo_table_border}\index{epoTableBorder@{epoTableBorder}}
+
+
+print(\textquotesingle{}Done first wait\+:\textquotesingle{},xx.\+text)  
+
+
+
+
+\doxysubsection{Detailed Description}
+print(\textquotesingle{}Done first wait\+:\textquotesingle{},xx.\+text) 
+
+if re.\+search(\textquotesingle{}Recaptcha Refresh\textquotesingle{},xx.\+text)\+: print(\textquotesingle{}hit recapcha\textquotesingle{}) \#print(driver.\+find\+\_\+element\+\_\+by\+\_\+xpath(\textquotesingle{}.//$\ast$\mbox{[}@id=\char`\"{}selectnewcase\char`\"{}\mbox{]}/table/tbody\textquotesingle{}).text) \#print(driver.\+find\+\_\+element\+\_\+by\+\_\+xpath(\textquotesingle{}.//$\ast$\mbox{[}@id=\char`\"{}selectnewcase\char`\"{}\mbox{]}/table/tbody\textquotesingle{}).get\+\_\+attribute(\textquotesingle{}inner\+H\+T\+ML\textquotesingle{})) driver.\+get(\textquotesingle{}\href{https://portal.uspto.gov/pair/PublicPair'}{\texttt{ https\+://portal.\+uspto.\+gov/pair/\+Public\+Pair\textquotesingle{}}}) driver.\+save\+\_\+screenshot(\char`\"{}screenshot.\+png\char`\"{}) sleep(5) xx = Web\+Driver\+Wait(driver, 60).until( E\+C.\+presence\+\_\+of\+\_\+element\+\_\+located((By.\+X\+P\+A\+TH ,\textquotesingle{}.//$\ast$\mbox{[}(@id=\char`\"{}pagedescription\char`\"{} and not(contains(text(),\char`\"{}\+Select New Case\char`\"{}))) or contains(text(),\char`\"{}\+Recaptcha Refresh\char`\"{}) \mbox{]}\textquotesingle{}))) \hypertarget{classepo_table_border_autotoc_md1}{}\doxysubsection{E\+C.\+presence\+\_\+of\+\_\+element\+\_\+located((\+By.\+X\+P\+A\+T\+H ,\textquotesingle{}.//$\ast$\mbox{[}(@id=\char`\"{}pagedescription\char`\"{} and contains(text(),\char`\"{}\+Bibliographic Data\char`\"{})) or contains(text(),\char`\"{}\+Recaptcha Refresh\char`\"{}) \mbox{]}\textquotesingle{})))}\label{classepo_table_border_autotoc_md1}
+print(xx.\+text) if re.\+search(\textquotesingle{}Select New Case\textquotesingle{},xx.\+text)\+: print(driver.\+find\+\_\+element\+\_\+by\+\_\+xpath(\textquotesingle{}.//$\ast$\mbox{[}@id=\char`\"{}\+E\+R\+R\+O\+R\+D\+I\+V\char`\"{}\mbox{]}\textquotesingle{}).text) with open(\textquotesingle{}page.\+html\textquotesingle{}, \textquotesingle{}w\textquotesingle{}) as f\+: f.\+write(driver.\+page\+\_\+source) elif re.\+search(\textquotesingle{}Bibliographic Data\textquotesingle{},xx.\+text)\+: priint(\textquotesingle{}Found\textquotesingle{}) print(\textquotesingle{}done\textquotesingle{}) try\+: tr\+\_\+history\+\_\+tab = Web\+Driver\+Wait(driver, 60).until( E\+C.\+presence\+\_\+of\+\_\+element\+\_\+located((By.\+X\+P\+A\+TH ,\textquotesingle{}//a\mbox{[}@tabindex=\char`\"{}12\char`\"{}\mbox{]}\textquotesingle{}))) print(\textquotesingle{}found history tab\textquotesingle{}) except\+: err\+\_\+message = driver.\+find\+\_\+element\+\_\+by\+\_\+xpath(\textquotesingle{}//table\mbox{[} if not err\+\_\+message\+: raise Exception(\textquotesingle{}Error message not found\textquotesingle{}) else\+: raise Exception(err\+\_\+message.\+text.\+strip().replace(\textquotesingle{}~\newline
+\textquotesingle{},\textquotesingle{}\textquotesingle{})) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{trh__scraper_8py}{trh\+\_\+scraper.\+py}}\end{DoxyCompactItemize}

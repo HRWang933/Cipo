@@ -1,0 +1,7 @@
+M\+O\+D\+E\+LS used by different processing routines for creating particular Impala table structures. \begin{DoxyVerb}Each directory contains set of models (CREATE TABLE body expressions) for particular source file type:
+\end{DoxyVerb}
+
+
+ad -\/ Assignment X\+ML files pa -\/ Old Application X\+ML files pg -\/ Old Grant X\+ML files ipa -\/ New Application X\+ML files ipg -\/ New Grant X\+ML files phi -\/ Patent holder information (Scraped from \href{https://fees.uspto.gov/MaintenanceFees/fees/details?}{\texttt{ https\+://fees.\+uspto.\+gov/\+Maintenance\+Fees/fees/details?}}) thist -\/ Transaction history information (Requested from \href{https://ped.uspto.gov/api/queries}{\texttt{ https\+://ped.\+uspto.\+gov/api/queries}}) ainf -\/ Application information (Requested from \href{https://ped.uspto.gov/api/queries}{\texttt{ https\+://ped.\+uspto.\+gov/api/queries}}) fee\+\_\+d -\/ Maintenance fee M\+A\+IN T\+XT file fee\+\_\+m -\/ Maintenance fee D\+E\+S\+C\+R\+I\+P\+T\+I\+ON T\+XT file att -\/ Attorney T\+XT file td -\/ Canada Trademarks data \begin{DoxyVerb}Each models script from particular directory contains body of SQL CREATE TABLE statement.
+\end{DoxyVerb}
+ This boby used by tbl\+\_\+model() class from helpers.\+py to construct full S\+QL statement. 

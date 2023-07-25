@@ -1,0 +1,304 @@
+\hypertarget{namespacetrh__scraper}{}\doxysection{trh\+\_\+scraper Namespace Reference}
+\label{namespacetrh__scraper}\index{trh\_scraper@{trh\_scraper}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_aaaf6a409e848c5def2e4566137b0b7ae}{wait\+\_\+between}} (a, b)
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_aafc6e22803328a795c65419636b780eb}{run\+\_\+query}} (query)
+\begin{DoxyCompactList}\small\item\em Execute Impala query. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a865839db813a11087b51acbe479842f6}{get\+\_\+tasks}} (\mbox{\hyperlink{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}{year}}, page\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Get list of partitions and application Ids. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a765fd63c19d55956d9e2e560ae9880c3}{load\+\_\+table}} (proc\+\_\+date)
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a1ea389c60e0f0ba31922f5da19a5e25e}{hdfs\+\_\+write}} (proc\+\_\+date, \mbox{\hyperlink{namespacetrh__scraper_a60b1d75c78c2812ff22057e8629cb0de}{result}})
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a5e792d3caeaa197756fc49e2dd37cf53}{get\+\_\+captcha}} (url, site\+\_\+key)
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a3b0d875a4f74b69c90d51d14f585c7aa}{check\+\_\+year}} (value)
+\begin{DoxyCompactList}\small\item\em --year C\+LI parameter validation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__scraper_aa2103b55a4685e51b2a6328f9eba3658}{scrape\+\_\+site}} (app\+\_\+ids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a815f140ec482a1fbfdab9283ca74d585}{stop\+\_\+max\+\_\+attempt\+\_\+number}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_aea83287fbf6a40247e89fb6b3fd0857f}{wait\+\_\+random\+\_\+min}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a828bf39cf174be9b1f1b07e6d260febf}{wait\+\_\+random\+\_\+max}}
+\item 
+tuple \mbox{\hyperlink{namespacetrh__scraper_adecd2739d3b753d43c35c290060af6cd}{descr}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a596c3812066e5aee25650ffe8bfa43f2}{arg\+\_\+parser}} = argparse.\+Argument\+Parser(description=\mbox{\hyperlink{namespacetrh__scraper_adecd2739d3b753d43c35c290060af6cd}{descr}})
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_ad80318390b3cd5ffe380aebf911da949}{type}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a905f94f8acf5fc19fb6d3319dfbed857}{default}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_aba519836f405b2aa70a88fa38a12bf9a}{help}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a4e24a3b7e07fd13c6d4735e30f613d67}{args}} = arg\+\_\+parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}{year}} = args.\+year
+\item 
+tuple \mbox{\hyperlink{namespacetrh__scraper_a5e67c74bdf39eba836da30465942fd82}{log\+\_\+file\+\_\+name}} = (\textquotesingle{}./log/nocaptcha/scrap\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a47cb758e6b445e0a803c0f11074b26e6}{format}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_acda927f390be082984e72bf7e05c9c52}{level}}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_ac97bdffc6049fcacb769b7c11cb61a54}{log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a3aa31adce295c18244dc3fbc4e923349}{root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a2c71445fa00b1cb6ff51efb9f4608075}{file\+Handler}} = logging.\+File\+Handler(\mbox{\hyperlink{namespacetrh__scraper_a5e67c74bdf39eba836da30465942fd82}{log\+\_\+file\+\_\+name}})
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}} = \mbox{\hyperlink{namespacetrh__scraper_a865839db813a11087b51acbe479842f6}{get\+\_\+tasks}}(\mbox{\hyperlink{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}{year}}, args.\+block\+\_\+size)
+\item 
+bool \mbox{\hyperlink{namespacetrh__scraper_aaa00313b57f4512da5247eb43c15051e}{enough}} = False
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_a80eb095cf713abaed9cfc859303547c3}{start\+\_\+amount}} = \mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}size\textquotesingle{}\mbox{]}
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_aa52b8b0cc790f5ce9613f48b1f668d01}{total\+\_\+amount}} = \mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}size\textquotesingle{}\mbox{]}
+\item 
+int \mbox{\hyperlink{namespacetrh__scraper_a678be2489b3658feef7e23207ac29597}{retries}} = 0
+\item 
+int \mbox{\hyperlink{namespacetrh__scraper_ad41217096fe0467a36a822e106963d7c}{total\+\_\+ids}} = 0
+\item 
+def \mbox{\hyperlink{namespacetrh__scraper_affeb8d76ff30c826ea7b70d3fff4d120}{res}} = \mbox{\hyperlink{namespacetrh__scraper_aa2103b55a4685e51b2a6328f9eba3658}{scrape\+\_\+site}}(\mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}tasks\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_ab5ce348641db8c48c38f84256876dd94}{ids}} = set()
+\item 
+list \mbox{\hyperlink{namespacetrh__scraper_a60b1d75c78c2812ff22057e8629cb0de}{result}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetrh__scraper_a412c346c09fa4a80e3b79fb25b5eaa51}{marker}} = str(int(time()))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetrh__scraper_a3b0d875a4f74b69c90d51d14f585c7aa}\label{namespacetrh__scraper_a3b0d875a4f74b69c90d51d14f585c7aa}} 
+\index{trh\_scraper@{trh\_scraper}!check\_year@{check\_year}}
+\index{check\_year@{check\_year}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{check\_year()}{check\_year()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+check\+\_\+year (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+--year C\+LI parameter validation 
+
+\mbox{\Hypertarget{namespacetrh__scraper_a5e792d3caeaa197756fc49e2dd37cf53}\label{namespacetrh__scraper_a5e792d3caeaa197756fc49e2dd37cf53}} 
+\index{trh\_scraper@{trh\_scraper}!get\_captcha@{get\_captcha}}
+\index{get\_captcha@{get\_captcha}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{get\_captcha()}{get\_captcha()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+get\+\_\+captcha (\begin{DoxyParamCaption}\item[{}]{url,  }\item[{}]{site\+\_\+key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a865839db813a11087b51acbe479842f6}\label{namespacetrh__scraper_a865839db813a11087b51acbe479842f6}} 
+\index{trh\_scraper@{trh\_scraper}!get\_tasks@{get\_tasks}}
+\index{get\_tasks@{get\_tasks}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{get\_tasks()}{get\_tasks()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+get\+\_\+tasks (\begin{DoxyParamCaption}\item[{}]{year,  }\item[{}]{page\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Get list of partitions and application Ids. 
+
+\mbox{\Hypertarget{namespacetrh__scraper_a1ea389c60e0f0ba31922f5da19a5e25e}\label{namespacetrh__scraper_a1ea389c60e0f0ba31922f5da19a5e25e}} 
+\index{trh\_scraper@{trh\_scraper}!hdfs\_write@{hdfs\_write}}
+\index{hdfs\_write@{hdfs\_write}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{hdfs\_write()}{hdfs\_write()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+hdfs\+\_\+write (\begin{DoxyParamCaption}\item[{}]{proc\+\_\+date,  }\item[{}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a765fd63c19d55956d9e2e560ae9880c3}\label{namespacetrh__scraper_a765fd63c19d55956d9e2e560ae9880c3}} 
+\index{trh\_scraper@{trh\_scraper}!load\_table@{load\_table}}
+\index{load\_table@{load\_table}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{load\_table()}{load\_table()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+load\+\_\+table (\begin{DoxyParamCaption}\item[{}]{proc\+\_\+date }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_aafc6e22803328a795c65419636b780eb}\label{namespacetrh__scraper_aafc6e22803328a795c65419636b780eb}} 
+\index{trh\_scraper@{trh\_scraper}!run\_query@{run\_query}}
+\index{run\_query@{run\_query}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{run\_query()}{run\_query()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+run\+\_\+query (\begin{DoxyParamCaption}\item[{}]{query }\end{DoxyParamCaption})}
+
+
+
+Execute Impala query. 
+
+\mbox{\Hypertarget{namespacetrh__scraper_aa2103b55a4685e51b2a6328f9eba3658}\label{namespacetrh__scraper_aa2103b55a4685e51b2a6328f9eba3658}} 
+\index{trh\_scraper@{trh\_scraper}!scrape\_site@{scrape\_site}}
+\index{scrape\_site@{scrape\_site}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{scrape\_site()}{scrape\_site()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+scrape\+\_\+site (\begin{DoxyParamCaption}\item[{}]{app\+\_\+ids }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_aaaf6a409e848c5def2e4566137b0b7ae}\label{namespacetrh__scraper_aaaf6a409e848c5def2e4566137b0b7ae}} 
+\index{trh\_scraper@{trh\_scraper}!wait\_between@{wait\_between}}
+\index{wait\_between@{wait\_between}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{wait\_between()}{wait\_between()}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+wait\+\_\+between (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetrh__scraper_a596c3812066e5aee25650ffe8bfa43f2}\label{namespacetrh__scraper_a596c3812066e5aee25650ffe8bfa43f2}} 
+\index{trh\_scraper@{trh\_scraper}!arg\_parser@{arg\_parser}}
+\index{arg\_parser@{arg\_parser}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{arg\_parser}{arg\_parser}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+arg\+\_\+parser = argparse.\+Argument\+Parser(description=\mbox{\hyperlink{namespacetrh__scraper_adecd2739d3b753d43c35c290060af6cd}{descr}})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a4e24a3b7e07fd13c6d4735e30f613d67}\label{namespacetrh__scraper_a4e24a3b7e07fd13c6d4735e30f613d67}} 
+\index{trh\_scraper@{trh\_scraper}!args@{args}}
+\index{args@{args}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+args = arg\+\_\+parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a905f94f8acf5fc19fb6d3319dfbed857}\label{namespacetrh__scraper_a905f94f8acf5fc19fb6d3319dfbed857}} 
+\index{trh\_scraper@{trh\_scraper}!default@{default}}
+\index{default@{default}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+default}
+
+\mbox{\Hypertarget{namespacetrh__scraper_adecd2739d3b753d43c35c290060af6cd}\label{namespacetrh__scraper_adecd2739d3b753d43c35c290060af6cd}} 
+\index{trh\_scraper@{trh\_scraper}!descr@{descr}}
+\index{descr@{descr}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{descr}{descr}}
+{\footnotesize\ttfamily tuple trh\+\_\+scraper.\+descr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'Transaction history screper v0.1\(\backslash\)n'}}
+\DoxyCodeLine{2              \textcolor{stringliteral}{'Author: Alex Kovalsky'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacetrh__scraper_aaa00313b57f4512da5247eb43c15051e}\label{namespacetrh__scraper_aaa00313b57f4512da5247eb43c15051e}} 
+\index{trh\_scraper@{trh\_scraper}!enough@{enough}}
+\index{enough@{enough}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{enough}{enough}}
+{\footnotesize\ttfamily bool trh\+\_\+scraper.\+enough = False}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a2c71445fa00b1cb6ff51efb9f4608075}\label{namespacetrh__scraper_a2c71445fa00b1cb6ff51efb9f4608075}} 
+\index{trh\_scraper@{trh\_scraper}!fileHandler@{fileHandler}}
+\index{fileHandler@{fileHandler}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{fileHandler}{fileHandler}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+file\+Handler = logging.\+File\+Handler(\mbox{\hyperlink{namespacetrh__scraper_a5e67c74bdf39eba836da30465942fd82}{log\+\_\+file\+\_\+name}})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a47cb758e6b445e0a803c0f11074b26e6}\label{namespacetrh__scraper_a47cb758e6b445e0a803c0f11074b26e6}} 
+\index{trh\_scraper@{trh\_scraper}!format@{format}}
+\index{format@{format}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+format}
+
+\mbox{\Hypertarget{namespacetrh__scraper_aba519836f405b2aa70a88fa38a12bf9a}\label{namespacetrh__scraper_aba519836f405b2aa70a88fa38a12bf9a}} 
+\index{trh\_scraper@{trh\_scraper}!help@{help}}
+\index{help@{help}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+help}
+
+\mbox{\Hypertarget{namespacetrh__scraper_ab5ce348641db8c48c38f84256876dd94}\label{namespacetrh__scraper_ab5ce348641db8c48c38f84256876dd94}} 
+\index{trh\_scraper@{trh\_scraper}!ids@{ids}}
+\index{ids@{ids}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+ids = set()}
+
+\mbox{\Hypertarget{namespacetrh__scraper_acda927f390be082984e72bf7e05c9c52}\label{namespacetrh__scraper_acda927f390be082984e72bf7e05c9c52}} 
+\index{trh\_scraper@{trh\_scraper}!level@{level}}
+\index{level@{level}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+level}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a5e67c74bdf39eba836da30465942fd82}\label{namespacetrh__scraper_a5e67c74bdf39eba836da30465942fd82}} 
+\index{trh\_scraper@{trh\_scraper}!log\_file\_name@{log\_file\_name}}
+\index{log\_file\_name@{log\_file\_name}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{log\_file\_name}{log\_file\_name}}
+{\footnotesize\ttfamily tuple trh\+\_\+scraper.\+log\+\_\+file\+\_\+name = (\textquotesingle{}./log/nocaptcha/scrap\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacetrh__scraper_ac97bdffc6049fcacb769b7c11cb61a54}\label{namespacetrh__scraper_ac97bdffc6049fcacb769b7c11cb61a54}} 
+\index{trh\_scraper@{trh\_scraper}!logFormatter@{logFormatter}}
+\index{logFormatter@{logFormatter}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{logFormatter}{logFormatter}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+log\+Formatter = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a412c346c09fa4a80e3b79fb25b5eaa51}\label{namespacetrh__scraper_a412c346c09fa4a80e3b79fb25b5eaa51}} 
+\index{trh\_scraper@{trh\_scraper}!marker@{marker}}
+\index{marker@{marker}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{marker}{marker}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+marker = str(int(time()))}
+
+\mbox{\Hypertarget{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}\label{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}} 
+\index{trh\_scraper@{trh\_scraper}!portion@{portion}}
+\index{portion@{portion}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{portion}{portion}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+portion = \mbox{\hyperlink{namespacetrh__scraper_a865839db813a11087b51acbe479842f6}{get\+\_\+tasks}}(\mbox{\hyperlink{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}{year}}, args.\+block\+\_\+size)}
+
+\mbox{\Hypertarget{namespacetrh__scraper_affeb8d76ff30c826ea7b70d3fff4d120}\label{namespacetrh__scraper_affeb8d76ff30c826ea7b70d3fff4d120}} 
+\index{trh\_scraper@{trh\_scraper}!res@{res}}
+\index{res@{res}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+res = \mbox{\hyperlink{namespacetrh__scraper_aa2103b55a4685e51b2a6328f9eba3658}{scrape\+\_\+site}}(\mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}tasks\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a60b1d75c78c2812ff22057e8629cb0de}\label{namespacetrh__scraper_a60b1d75c78c2812ff22057e8629cb0de}} 
+\index{trh\_scraper@{trh\_scraper}!result@{result}}
+\index{result@{result}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily list trh\+\_\+scraper.\+result = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a678be2489b3658feef7e23207ac29597}\label{namespacetrh__scraper_a678be2489b3658feef7e23207ac29597}} 
+\index{trh\_scraper@{trh\_scraper}!retries@{retries}}
+\index{retries@{retries}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{retries}{retries}}
+{\footnotesize\ttfamily int trh\+\_\+scraper.\+retries = 0}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a3aa31adce295c18244dc3fbc4e923349}\label{namespacetrh__scraper_a3aa31adce295c18244dc3fbc4e923349}} 
+\index{trh\_scraper@{trh\_scraper}!rootLogger@{rootLogger}}
+\index{rootLogger@{rootLogger}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{rootLogger}{rootLogger}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+root\+Logger = logging.\+get\+Logger()}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a80eb095cf713abaed9cfc859303547c3}\label{namespacetrh__scraper_a80eb095cf713abaed9cfc859303547c3}} 
+\index{trh\_scraper@{trh\_scraper}!start\_amount@{start\_amount}}
+\index{start\_amount@{start\_amount}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{start\_amount}{start\_amount}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+start\+\_\+amount = \mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}size\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a815f140ec482a1fbfdab9283ca74d585}\label{namespacetrh__scraper_a815f140ec482a1fbfdab9283ca74d585}} 
+\index{trh\_scraper@{trh\_scraper}!stop\_max\_attempt\_number@{stop\_max\_attempt\_number}}
+\index{stop\_max\_attempt\_number@{stop\_max\_attempt\_number}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{stop\_max\_attempt\_number}{stop\_max\_attempt\_number}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+stop\+\_\+max\+\_\+attempt\+\_\+number}
+
+\mbox{\Hypertarget{namespacetrh__scraper_aa52b8b0cc790f5ce9613f48b1f668d01}\label{namespacetrh__scraper_aa52b8b0cc790f5ce9613f48b1f668d01}} 
+\index{trh\_scraper@{trh\_scraper}!total\_amount@{total\_amount}}
+\index{total\_amount@{total\_amount}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{total\_amount}{total\_amount}}
+{\footnotesize\ttfamily def trh\+\_\+scraper.\+total\+\_\+amount = \mbox{\hyperlink{namespacetrh__scraper_abf33bfd3cdfea908fcdd9056f68bcb1c}{portion}}\mbox{[}\textquotesingle{}size\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacetrh__scraper_ad41217096fe0467a36a822e106963d7c}\label{namespacetrh__scraper_ad41217096fe0467a36a822e106963d7c}} 
+\index{trh\_scraper@{trh\_scraper}!total\_ids@{total\_ids}}
+\index{total\_ids@{total\_ids}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{total\_ids}{total\_ids}}
+{\footnotesize\ttfamily int trh\+\_\+scraper.\+total\+\_\+ids = 0}
+
+\mbox{\Hypertarget{namespacetrh__scraper_ad80318390b3cd5ffe380aebf911da949}\label{namespacetrh__scraper_ad80318390b3cd5ffe380aebf911da949}} 
+\index{trh\_scraper@{trh\_scraper}!type@{type}}
+\index{type@{type}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+type}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a828bf39cf174be9b1f1b07e6d260febf}\label{namespacetrh__scraper_a828bf39cf174be9b1f1b07e6d260febf}} 
+\index{trh\_scraper@{trh\_scraper}!wait\_random\_max@{wait\_random\_max}}
+\index{wait\_random\_max@{wait\_random\_max}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{wait\_random\_max}{wait\_random\_max}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+wait\+\_\+random\+\_\+max}
+
+\mbox{\Hypertarget{namespacetrh__scraper_aea83287fbf6a40247e89fb6b3fd0857f}\label{namespacetrh__scraper_aea83287fbf6a40247e89fb6b3fd0857f}} 
+\index{trh\_scraper@{trh\_scraper}!wait\_random\_min@{wait\_random\_min}}
+\index{wait\_random\_min@{wait\_random\_min}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{wait\_random\_min}{wait\_random\_min}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+wait\+\_\+random\+\_\+min}
+
+\mbox{\Hypertarget{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}\label{namespacetrh__scraper_a671904a2a7ad63db8b097ac02eb067af}} 
+\index{trh\_scraper@{trh\_scraper}!year@{year}}
+\index{year@{year}!trh\_scraper@{trh\_scraper}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily trh\+\_\+scraper.\+year = args.\+year}
+

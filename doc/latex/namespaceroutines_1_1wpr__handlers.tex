@@ -1,0 +1,198 @@
+\hypertarget{namespaceroutines_1_1wpr__handlers}{}\doxysection{routines.\+wpr\+\_\+handlers Namespace Reference}
+\label{namespaceroutines_1_1wpr__handlers}\index{routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_acfbd51ab42d0c8905b4e0ce0091ea316}{init\+\_\+parsers}} (f\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Get list of allowed parser models. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_aedbbd41fccf6801c42c7ed78a0b88550}{set\+\_\+env}} ()
+\begin{DoxyCompactList}\small\item\em Set J\+A\+VE env variables. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a5fbecb6078d72fdbda73fe7d9f124967}{set\+\_\+impala\+\_\+permissions}} (base\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em Set required permission to H\+D\+FS path It should be done for using H\+D\+FS file as Impala table source. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a93c961c8c21962bb598d2dca8e3b9420}{parse\+\_\+file\+\_\+name}} (file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get required information from file name. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_adb9eacb198820fc54dab7b086f0e20e6}{hdfs\+\_\+connect}} ()
+\begin{DoxyCompactList}\small\item\em Get H\+D\+FS connector. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_ac6e64599161d0490dcf228cf416c6322}{parse\+\_\+xml2}} ($\ast$args)
+\begin{DoxyCompactList}\small\item\em Parsing X\+ML files for td type. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a9f5f901aebc3d49c375be063a8a373c8}{parse\+\_\+xml}} ($\ast$args)
+\begin{DoxyCompactList}\small\item\em Parsing X\+ML files. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_ab6439826f9d2c4e5fbe35c10d4ce60ff}{parse\+\_\+txt}} ($\ast$args)
+\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a7d17040d1bf86871ded6b0ea991bec11}{parse2}} (file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Parser wrapper for Canada Trademark Data. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a77b13d593269e9eb4bbd9a3915e5a7fe}{parse}} (file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Parser wrapper. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a4459b94d26d214390661ff3d03cc56d1}{parse\+\_\+att}} ($\ast$args)
+\begin{DoxyCompactList}\small\item\em Parse Attorney text file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a7b1f9543927300de81a9026b190bdad0}{parse\+\_\+fee\+\_\+d}} ($\ast$args)
+\begin{DoxyCompactList}\small\item\em Parsing transaction fee description file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a0eca42b09da56388ab73173b26e9f542}{local\+\_\+to\+\_\+hdfs}} (local\+\_\+file, hdfs\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Copy file from local to H\+D\+FS. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a930f8fdc4a54ea001d445c342515ee7f}{write\+\_\+result}} (proc\+\_\+date, modul, results)
+\begin{DoxyCompactList}\small\item\em Write content to the local file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_a0961bc7cb5c52bd8bc9b0ebf2c16add4}{write\+\_\+hdfs}} (hdfs, proc\+\_\+date, ftype, modul, results)
+\begin{DoxyCompactList}\small\item\em Write content to the H\+D\+FS file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceroutines_1_1wpr__handlers_aa64a9d242f72d2649f56e09bb95a5274}{cfg}} = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_adb9eacb198820fc54dab7b086f0e20e6}\label{namespaceroutines_1_1wpr__handlers_adb9eacb198820fc54dab7b086f0e20e6}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!hdfs\_connect@{hdfs\_connect}}
+\index{hdfs\_connect@{hdfs\_connect}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{hdfs\_connect()}{hdfs\_connect()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+hdfs\+\_\+connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get H\+D\+FS connector. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_acfbd51ab42d0c8905b4e0ce0091ea316}\label{namespaceroutines_1_1wpr__handlers_acfbd51ab42d0c8905b4e0ce0091ea316}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!init\_parsers@{init\_parsers}}
+\index{init\_parsers@{init\_parsers}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{init\_parsers()}{init\_parsers()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+init\+\_\+parsers (\begin{DoxyParamCaption}\item[{}]{f\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Get list of allowed parser models. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a0eca42b09da56388ab73173b26e9f542}\label{namespaceroutines_1_1wpr__handlers_a0eca42b09da56388ab73173b26e9f542}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!local\_to\_hdfs@{local\_to\_hdfs}}
+\index{local\_to\_hdfs@{local\_to\_hdfs}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{local\_to\_hdfs()}{local\_to\_hdfs()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+local\+\_\+to\+\_\+hdfs (\begin{DoxyParamCaption}\item[{}]{local\+\_\+file,  }\item[{}]{hdfs\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Copy file from local to H\+D\+FS. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a77b13d593269e9eb4bbd9a3915e5a7fe}\label{namespaceroutines_1_1wpr__handlers_a77b13d593269e9eb4bbd9a3915e5a7fe}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse@{parse}}
+\index{parse@{parse}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse (\begin{DoxyParamCaption}\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Parser wrapper. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a7d17040d1bf86871ded6b0ea991bec11}\label{namespaceroutines_1_1wpr__handlers_a7d17040d1bf86871ded6b0ea991bec11}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse2@{parse2}}
+\index{parse2@{parse2}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse2()}{parse2()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse2 (\begin{DoxyParamCaption}\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Parser wrapper for Canada Trademark Data. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a4459b94d26d214390661ff3d03cc56d1}\label{namespaceroutines_1_1wpr__handlers_a4459b94d26d214390661ff3d03cc56d1}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_att@{parse\_att}}
+\index{parse\_att@{parse\_att}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_att()}{parse\_att()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+att (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Parse Attorney text file. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a7b1f9543927300de81a9026b190bdad0}\label{namespaceroutines_1_1wpr__handlers_a7b1f9543927300de81a9026b190bdad0}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_fee\_d@{parse\_fee\_d}}
+\index{parse\_fee\_d@{parse\_fee\_d}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_fee\_d()}{parse\_fee\_d()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+fee\+\_\+d (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Parsing transaction fee description file. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a93c961c8c21962bb598d2dca8e3b9420}\label{namespaceroutines_1_1wpr__handlers_a93c961c8c21962bb598d2dca8e3b9420}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_file\_name@{parse\_file\_name}}
+\index{parse\_file\_name@{parse\_file\_name}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_file\_name()}{parse\_file\_name()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+file\+\_\+name (\begin{DoxyParamCaption}\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Get required information from file name. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_ab6439826f9d2c4e5fbe35c10d4ce60ff}\label{namespaceroutines_1_1wpr__handlers_ab6439826f9d2c4e5fbe35c10d4ce60ff}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_txt@{parse\_txt}}
+\index{parse\_txt@{parse\_txt}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_txt()}{parse\_txt()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+txt (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a9f5f901aebc3d49c375be063a8a373c8}\label{namespaceroutines_1_1wpr__handlers_a9f5f901aebc3d49c375be063a8a373c8}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_xml@{parse\_xml}}
+\index{parse\_xml@{parse\_xml}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_xml()}{parse\_xml()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+xml (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Parsing X\+ML files. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_ac6e64599161d0490dcf228cf416c6322}\label{namespaceroutines_1_1wpr__handlers_ac6e64599161d0490dcf228cf416c6322}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!parse\_xml2@{parse\_xml2}}
+\index{parse\_xml2@{parse\_xml2}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{parse\_xml2()}{parse\_xml2()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+parse\+\_\+xml2 (\begin{DoxyParamCaption}\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Parsing X\+ML files for td type. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_aedbbd41fccf6801c42c7ed78a0b88550}\label{namespaceroutines_1_1wpr__handlers_aedbbd41fccf6801c42c7ed78a0b88550}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!set\_env@{set\_env}}
+\index{set\_env@{set\_env}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{set\_env()}{set\_env()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+set\+\_\+env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set J\+A\+VE env variables. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a5fbecb6078d72fdbda73fe7d9f124967}\label{namespaceroutines_1_1wpr__handlers_a5fbecb6078d72fdbda73fe7d9f124967}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!set\_impala\_permissions@{set\_impala\_permissions}}
+\index{set\_impala\_permissions@{set\_impala\_permissions}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{set\_impala\_permissions()}{set\_impala\_permissions()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+set\+\_\+impala\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{base\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+Set required permission to H\+D\+FS path It should be done for using H\+D\+FS file as Impala table source. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a0961bc7cb5c52bd8bc9b0ebf2c16add4}\label{namespaceroutines_1_1wpr__handlers_a0961bc7cb5c52bd8bc9b0ebf2c16add4}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!write\_hdfs@{write\_hdfs}}
+\index{write\_hdfs@{write\_hdfs}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{write\_hdfs()}{write\_hdfs()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+write\+\_\+hdfs (\begin{DoxyParamCaption}\item[{}]{hdfs,  }\item[{}]{proc\+\_\+date,  }\item[{}]{ftype,  }\item[{}]{modul,  }\item[{}]{results }\end{DoxyParamCaption})}
+
+
+
+Write content to the H\+D\+FS file. 
+
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_a930f8fdc4a54ea001d445c342515ee7f}\label{namespaceroutines_1_1wpr__handlers_a930f8fdc4a54ea001d445c342515ee7f}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!write\_result@{write\_result}}
+\index{write\_result@{write\_result}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{write\_result()}{write\_result()}}
+{\footnotesize\ttfamily def routines.\+wpr\+\_\+handlers.\+write\+\_\+result (\begin{DoxyParamCaption}\item[{}]{proc\+\_\+date,  }\item[{}]{modul,  }\item[{}]{results }\end{DoxyParamCaption})}
+
+
+
+Write content to the local file. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceroutines_1_1wpr__handlers_aa64a9d242f72d2649f56e09bb95a5274}\label{namespaceroutines_1_1wpr__handlers_aa64a9d242f72d2649f56e09bb95a5274}} 
+\index{routines.wpr\_handlers@{routines.wpr\_handlers}!cfg@{cfg}}
+\index{cfg@{cfg}!routines.wpr\_handlers@{routines.wpr\_handlers}}
+\doxysubsubsection{\texorpdfstring{cfg}{cfg}}
+{\footnotesize\ttfamily routines.\+wpr\+\_\+handlers.\+cfg = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})}
+

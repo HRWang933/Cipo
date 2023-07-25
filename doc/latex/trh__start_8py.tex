@@ -1,0 +1,84 @@
+\hypertarget{trh__start_8py}{}\doxysection{trh\+\_\+start.\+py File Reference}
+\label{trh__start_8py}\index{trh\_start.py@{trh\_start.py}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtrh__start_1_1_stat}{trh\+\_\+start.\+Stat}}
+\begin{DoxyCompactList}\small\item\em Thread safe data struct for store statistic info from different processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacetrh__start}{trh\+\_\+start}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a9875ea1757768c2db960bd85e4bbd553}{trh\+\_\+start.\+write\+\_\+local}} (arr, name)
+\begin{DoxyCompactList}\small\item\em Write array of results to the local file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ae2d11eacd50781b8676a7b09ba809d74}{trh\+\_\+start.\+get\+\_\+data}} (app\+\_\+id)
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a09aea6a6fb518fee44ed6f60973f453e}{trh\+\_\+start.\+get\+\_\+data\+\_\+wrapper}} (app\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Wrap A\+PI reques process for using in multiprocessing pool. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ae894503578f1158c72d468527ea65783}{trh\+\_\+start.\+run\+\_\+query}} (query)
+\begin{DoxyCompactList}\small\item\em Execute Impala query. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a2b82ab8f8b93dcb69c5b362ed2c3312c}{trh\+\_\+start.\+get\+\_\+partitions}} ()
+\begin{DoxyCompactList}\small\item\em Get list of partitions starting from 35 days ago. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}{trh\+\_\+start.\+get\+\_\+ids}} (partition)
+\begin{DoxyCompactList}\small\item\em Get application ids list from particular partition. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}{trh\+\_\+start.\+start\+\_\+pool}} (ids)
+\begin{DoxyCompactList}\small\item\em Start multiprocessing pool. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}{trh\+\_\+start.\+split\+\_\+result}} (result, partition)
+\begin{DoxyCompactList}\small\item\em Split response to two separate data sets\+: common info and transactions. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_af7c605f84858b3c84865c28648fd41c3}{trh\+\_\+start.\+get\+\_\+tasks}} ()
+\begin{DoxyCompactList}\small\item\em Get year to process depend on host IP address. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a235a59731b4b7dd5da2f36bbf6193081}{trh\+\_\+start.\+get\+\_\+mail\+\_\+params}} (rfile)
+\begin{DoxyCompactList}\small\item\em Get credential for E\+Mail notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a3eb6e7124c2fe121589a524118bf8f18}{trh\+\_\+start.\+wait\+\_\+exponential\+\_\+multiplier}}
+\begin{DoxyCompactList}\small\item\em Request TH A\+PI with retrying up to 60 sec. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetrh__start_abfe55a506afd2a530edf04029beea77e}{trh\+\_\+start.\+wait\+\_\+exponential\+\_\+max}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a16036bca7d6b7826d12cbad4a1bd5664}{trh\+\_\+start.\+stop\+\_\+max\+\_\+delay}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_aefce98a670a63ed0e7943fe1403a32ca}{trh\+\_\+start.\+t}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a13f579e21a52e9a6254ac006e4ead97e}{trh\+\_\+start.\+format}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a2e3c457d5868a68c93900fc0fc8788aa}{trh\+\_\+start.\+level}}
+\item 
+tuple \mbox{\hyperlink{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}{trh\+\_\+start.\+log\+\_\+file\+\_\+name}} = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespacetrh__start_ac812e0bde71f9e5f81fee1fc010710a2}{trh\+\_\+start.\+log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetrh__start_aadf8f34b9f0a7e75a63d5b614f4c1b94}{trh\+\_\+start.\+root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a4cb395647d11a1231a075aa1cc781012}{trh\+\_\+start.\+file\+Handler}} = logging.\+File\+Handler(log\+\_\+file\+\_\+name)
+\item 
+int \mbox{\hyperlink{namespacetrh__start_a12219d38d768a23ab0995dabdf18d024}{trh\+\_\+start.\+i}} = 0
+\item 
+dictionary \mbox{\hyperlink{namespacetrh__start_afa14e10a604afc17836f2a66ee01567a}{trh\+\_\+start.\+properties}} = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}
+\item 
+\mbox{\hyperlink{namespacetrh__start_aef314301d37648a6f9e1ef2ca5a1cc95}{trh\+\_\+start.\+cfg}} = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetrh__start_a4ad7cea0b8ffbae31057314d711f4360}{trh\+\_\+start.\+models}} = cfg.\+active\+\_\+models
+\item 
+\mbox{\hyperlink{namespacetrh__start_a99afca3ae3cbefeefa6fa49ac511a9cc}{trh\+\_\+start.\+st\+\_\+data}} = Stat()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a725423d1858090e26458a5ddbd99fba1}{trh\+\_\+start.\+start}} = time.\+time()
+\item 
+def \mbox{\hyperlink{namespacetrh__start_aca863389e28a173578f974838bbb8131}{trh\+\_\+start.\+ids}} = get\+\_\+ids(partition)
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a0752742e5ad0d665190829e80e3c7b6e}{trh\+\_\+start.\+final}} = split\+\_\+result(start\+\_\+pool(ids), partition)
+\item 
+\mbox{\hyperlink{namespacetrh__start_aee4eb618736211d96d57b405a06316b2}{trh\+\_\+start.\+hdfs\+\_\+conn}} = parser.\+hdfs\+\_\+connect()
+\item 
+string \mbox{\hyperlink{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}{trh\+\_\+start.\+res\+\_\+path}} = \textquotesingle{}./log/thist/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrh__start_afdc2093290a8a55dc50edb9af984c8b1}{trh\+\_\+start.\+marker}} = str(int(time.\+time()))
+\item 
+dictionary \mbox{\hyperlink{namespacetrh__start_aa1d59afb5c4238492da61a882624465d}{trh\+\_\+start.\+logarr}}
+\item 
+tuple \mbox{\hyperlink{namespacetrh__start_a7a464f5e0e48e5cb84e2e8fc7561198b}{trh\+\_\+start.\+name}} = (\textquotesingle{}\%s\%s\+\_\+\%s.\+txt1\textquotesingle{}) \% (res\+\_\+path, elm, partition)
+\end{DoxyCompactItemize}

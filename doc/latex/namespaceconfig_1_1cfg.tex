@@ -1,0 +1,108 @@
+\hypertarget{namespaceconfig_1_1cfg}{}\doxysection{config.\+cfg Namespace Reference}
+\label{namespaceconfig_1_1cfg}\index{config.cfg@{config.cfg}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \mbox{\hyperlink{namespaceconfig_1_1cfg_a1674b1620384d0e9cab9ec9bcc853eba}{active\+\_\+models}}
+\begin{DoxyCompactList}\small\item\em Active models describe the model files used by processing routines to create particular Impala table structures. \end{DoxyCompactList}\item 
+dictionary \mbox{\hyperlink{namespaceconfig_1_1cfg_a8fceaa9ae200813f2c272a1a2f54173e}{active\+\_\+parsers}}
+\begin{DoxyCompactList}\small\item\em Active parsers describe the parsers files used by processing routines to parse particular parts of X\+ML or T\+XT source files. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceconfig_1_1cfg_afc5d2054bb5300d6c85ad479ea5e8be1}{hdfs\+\_\+base\+\_\+dir}} = \textquotesingle{}/ipv\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Base H\+D\+FS directory. \end{DoxyCompactList}\item 
+dictionary \mbox{\hyperlink{namespaceconfig_1_1cfg_a1f3120b125808fd02203e40a2e932740}{dwl\+\_\+links}}
+\begin{DoxyCompactList}\small\item\em Base links for downloading source files. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceconfig_1_1cfg_a12f86e038c40eb0c1b820a21d082e1b4}{impala\+\_\+host}} = \textquotesingle{}192.\+168.\+250.\+31\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Impala entry point host. \end{DoxyCompactList}\item 
+dictionary \mbox{\hyperlink{namespaceconfig_1_1cfg_a453d895476556be9fa4b2d233944a9a6}{mail\+\_\+params}}
+\begin{DoxyCompactList}\small\item\em Mail credentials and parameters used by processing routines for sending notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_a1674b1620384d0e9cab9ec9bcc853eba}\label{namespaceconfig_1_1cfg_a1674b1620384d0e9cab9ec9bcc853eba}} 
+\index{config.cfg@{config.cfg}!active\_models@{active\_models}}
+\index{active\_models@{active\_models}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{active\_models}{active\_models}}
+{\footnotesize\ttfamily dictionary config.\+cfg.\+active\+\_\+models}
+
+
+
+Active models describe the model files used by processing routines to create particular Impala table structures. 
+
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_a8fceaa9ae200813f2c272a1a2f54173e}\label{namespaceconfig_1_1cfg_a8fceaa9ae200813f2c272a1a2f54173e}} 
+\index{config.cfg@{config.cfg}!active\_parsers@{active\_parsers}}
+\index{active\_parsers@{active\_parsers}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{active\_parsers}{active\_parsers}}
+{\footnotesize\ttfamily dictionary config.\+cfg.\+active\+\_\+parsers}
+
+
+
+Active parsers describe the parsers files used by processing routines to parse particular parts of X\+ML or T\+XT source files. 
+
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_a1f3120b125808fd02203e40a2e932740}\label{namespaceconfig_1_1cfg_a1f3120b125808fd02203e40a2e932740}} 
+\index{config.cfg@{config.cfg}!dwl\_links@{dwl\_links}}
+\index{dwl\_links@{dwl\_links}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{dwl\_links}{dwl\_links}}
+{\footnotesize\ttfamily dictionary config.\+cfg.\+dwl\+\_\+links}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'ipg'}: \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/grant/redbook/fulltext/'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'pg'} : \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/grant/redbook/fulltext/'},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'pa'} : \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/application/redbook/fulltext/'},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'ipa'}: \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/application/redbook/fulltext/'},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'ad'} : \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/assignment/'},}
+\DoxyCodeLine{7     \textcolor{stringliteral}{'td'} : \textcolor{stringliteral}{'https://www.ic.gc.ca/eic/site/cipointernet-\/internetopic.nsf/eng/h\_wr04302.html'},}
+\DoxyCodeLine{8     \textcolor{stringliteral}{'fee'}: \textcolor{stringliteral}{'https://bulkdata.uspto.gov/data/patent/maintenancefee/MaintFeeEvents.zip'},}
+\DoxyCodeLine{9     \textcolor{stringliteral}{'att'}: \textcolor{stringliteral}{'http://www.uspto.gov/attorney-\/roster/attorney.zip'} }
+\DoxyCodeLine{10     \}}
+
+\end{DoxyCode}
+
+
+Base links for downloading source files. 
+
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_afc5d2054bb5300d6c85ad479ea5e8be1}\label{namespaceconfig_1_1cfg_afc5d2054bb5300d6c85ad479ea5e8be1}} 
+\index{config.cfg@{config.cfg}!hdfs\_base\_dir@{hdfs\_base\_dir}}
+\index{hdfs\_base\_dir@{hdfs\_base\_dir}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{hdfs\_base\_dir}{hdfs\_base\_dir}}
+{\footnotesize\ttfamily string config.\+cfg.\+hdfs\+\_\+base\+\_\+dir = \textquotesingle{}/ipv\textquotesingle{}}
+
+
+
+Base H\+D\+FS directory. 
+
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_a12f86e038c40eb0c1b820a21d082e1b4}\label{namespaceconfig_1_1cfg_a12f86e038c40eb0c1b820a21d082e1b4}} 
+\index{config.cfg@{config.cfg}!impala\_host@{impala\_host}}
+\index{impala\_host@{impala\_host}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{impala\_host}{impala\_host}}
+{\footnotesize\ttfamily string config.\+cfg.\+impala\+\_\+host = \textquotesingle{}192.\+168.\+250.\+31\textquotesingle{}}
+
+
+
+Impala entry point host. 
+
+\mbox{\Hypertarget{namespaceconfig_1_1cfg_a453d895476556be9fa4b2d233944a9a6}\label{namespaceconfig_1_1cfg_a453d895476556be9fa4b2d233944a9a6}} 
+\index{config.cfg@{config.cfg}!mail\_params@{mail\_params}}
+\index{mail\_params@{mail\_params}!config.cfg@{config.cfg}}
+\doxysubsubsection{\texorpdfstring{mail\_params}{mail\_params}}
+{\footnotesize\ttfamily dictionary config.\+cfg.\+mail\+\_\+params}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =    \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'server'}   : \textcolor{stringliteral}{'192.168.0.220'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'username'} : \textcolor{stringliteral}{'administrator@ollip.com'},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'password'} : \textcolor{stringliteral}{'Iwl2bavp'},}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'send\_from'}: \textcolor{stringliteral}{'administrator@ollip.com'},}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'send\_to'}  : [\textcolor{stringliteral}{'info@ipvisibility.com'},\textcolor{stringliteral}{'tarek.shehab@ipvisibility.com'},\textcolor{stringliteral}{'limsiewling0803@gmail.com'}],}
+\DoxyCodeLine{7 \textcolor{comment}{\#    'text'     : text,}}
+\DoxyCodeLine{8 \textcolor{comment}{\#    'subject'  : ('\%s file \%s report') \% (type\_map[ftype], mode\_map[mode]),}}
+\DoxyCodeLine{9 \textcolor{comment}{\#    'files'    : [out\_file\_xlsx]}}
+\DoxyCodeLine{10     \}}
+
+\end{DoxyCode}
+
+
+Mail credentials and parameters used by processing routines for sending notifications. 
+

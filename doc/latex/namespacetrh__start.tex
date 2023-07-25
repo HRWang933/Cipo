@@ -1,0 +1,332 @@
+\hypertarget{namespacetrh__start}{}\doxysection{trh\+\_\+start Namespace Reference}
+\label{namespacetrh__start}\index{trh\_start@{trh\_start}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtrh__start_1_1_stat}{Stat}}
+\begin{DoxyCompactList}\small\item\em Thread safe data struct for store statistic info from different processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a9875ea1757768c2db960bd85e4bbd553}{write\+\_\+local}} (arr, \mbox{\hyperlink{namespacetrh__start_a7a464f5e0e48e5cb84e2e8fc7561198b}{name}})
+\begin{DoxyCompactList}\small\item\em Write array of results to the local file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ae2d11eacd50781b8676a7b09ba809d74}{get\+\_\+data}} (app\+\_\+id)
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a09aea6a6fb518fee44ed6f60973f453e}{get\+\_\+data\+\_\+wrapper}} (app\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Wrap A\+PI reques process for using in multiprocessing pool. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ae894503578f1158c72d468527ea65783}{run\+\_\+query}} (query)
+\begin{DoxyCompactList}\small\item\em Execute Impala query. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a2b82ab8f8b93dcb69c5b362ed2c3312c}{get\+\_\+partitions}} ()
+\begin{DoxyCompactList}\small\item\em Get list of partitions starting from 35 days ago. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}{get\+\_\+ids}} (partition)
+\begin{DoxyCompactList}\small\item\em Get application ids list from particular partition. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}{start\+\_\+pool}} (\mbox{\hyperlink{namespacetrh__start_aca863389e28a173578f974838bbb8131}{ids}})
+\begin{DoxyCompactList}\small\item\em Start multiprocessing pool. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}{split\+\_\+result}} (result, partition)
+\begin{DoxyCompactList}\small\item\em Split response to two separate data sets\+: common info and transactions. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_af7c605f84858b3c84865c28648fd41c3}{get\+\_\+tasks}} ()
+\begin{DoxyCompactList}\small\item\em Get year to process depend on host IP address. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetrh__start_a235a59731b4b7dd5da2f36bbf6193081}{get\+\_\+mail\+\_\+params}} (rfile)
+\begin{DoxyCompactList}\small\item\em Get credential for E\+Mail notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a3eb6e7124c2fe121589a524118bf8f18}{wait\+\_\+exponential\+\_\+multiplier}}
+\begin{DoxyCompactList}\small\item\em Request TH A\+PI with retrying up to 60 sec. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetrh__start_abfe55a506afd2a530edf04029beea77e}{wait\+\_\+exponential\+\_\+max}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a16036bca7d6b7826d12cbad4a1bd5664}{stop\+\_\+max\+\_\+delay}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_aefce98a670a63ed0e7943fe1403a32ca}{t}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a13f579e21a52e9a6254ac006e4ead97e}{format}}
+\item 
+\mbox{\hyperlink{namespacetrh__start_a2e3c457d5868a68c93900fc0fc8788aa}{level}}
+\item 
+tuple \mbox{\hyperlink{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}{log\+\_\+file\+\_\+name}} = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespacetrh__start_ac812e0bde71f9e5f81fee1fc010710a2}{log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetrh__start_aadf8f34b9f0a7e75a63d5b614f4c1b94}{root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a4cb395647d11a1231a075aa1cc781012}{file\+Handler}} = logging.\+File\+Handler(\mbox{\hyperlink{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}{log\+\_\+file\+\_\+name}})
+\item 
+int \mbox{\hyperlink{namespacetrh__start_a12219d38d768a23ab0995dabdf18d024}{i}} = 0
+\item 
+dictionary \mbox{\hyperlink{namespacetrh__start_afa14e10a604afc17836f2a66ee01567a}{properties}} = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}
+\item 
+\mbox{\hyperlink{namespacetrh__start_aef314301d37648a6f9e1ef2ca5a1cc95}{cfg}} = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetrh__start_a4ad7cea0b8ffbae31057314d711f4360}{models}} = cfg.\+active\+\_\+models
+\item 
+\mbox{\hyperlink{namespacetrh__start_a99afca3ae3cbefeefa6fa49ac511a9cc}{st\+\_\+data}} = \mbox{\hyperlink{classtrh__start_1_1_stat}{Stat}}()
+\item 
+\mbox{\hyperlink{namespacetrh__start_a725423d1858090e26458a5ddbd99fba1}{start}} = time.\+time()
+\item 
+def \mbox{\hyperlink{namespacetrh__start_aca863389e28a173578f974838bbb8131}{ids}} = \mbox{\hyperlink{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}{get\+\_\+ids}}(partition)
+\item 
+def \mbox{\hyperlink{namespacetrh__start_a0752742e5ad0d665190829e80e3c7b6e}{final}} = \mbox{\hyperlink{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}{split\+\_\+result}}(\mbox{\hyperlink{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}{start\+\_\+pool}}(\mbox{\hyperlink{namespacetrh__start_aca863389e28a173578f974838bbb8131}{ids}}), partition)
+\item 
+\mbox{\hyperlink{namespacetrh__start_aee4eb618736211d96d57b405a06316b2}{hdfs\+\_\+conn}} = parser.\+hdfs\+\_\+connect()
+\item 
+string \mbox{\hyperlink{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}{res\+\_\+path}} = \textquotesingle{}./log/thist/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrh__start_afdc2093290a8a55dc50edb9af984c8b1}{marker}} = str(int(time.\+time()))
+\item 
+dictionary \mbox{\hyperlink{namespacetrh__start_aa1d59afb5c4238492da61a882624465d}{logarr}}
+\item 
+tuple \mbox{\hyperlink{namespacetrh__start_a7a464f5e0e48e5cb84e2e8fc7561198b}{name}} = (\textquotesingle{}\%s\%s\+\_\+\%s.\+txt1\textquotesingle{}) \% (\mbox{\hyperlink{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}{res\+\_\+path}}, elm, partition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetrh__start_ae2d11eacd50781b8676a7b09ba809d74}\label{namespacetrh__start_ae2d11eacd50781b8676a7b09ba809d74}} 
+\index{trh\_start@{trh\_start}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{app\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacetrh__start_a09aea6a6fb518fee44ed6f60973f453e}\label{namespacetrh__start_a09aea6a6fb518fee44ed6f60973f453e}} 
+\index{trh\_start@{trh\_start}!get\_data\_wrapper@{get\_data\_wrapper}}
+\index{get\_data\_wrapper@{get\_data\_wrapper}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_data\_wrapper()}{get\_data\_wrapper()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+data\+\_\+wrapper (\begin{DoxyParamCaption}\item[{}]{app\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Wrap A\+PI reques process for using in multiprocessing pool. 
+
+\mbox{\Hypertarget{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}\label{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}} 
+\index{trh\_start@{trh\_start}!get\_ids@{get\_ids}}
+\index{get\_ids@{get\_ids}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_ids()}{get\_ids()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+ids (\begin{DoxyParamCaption}\item[{}]{partition }\end{DoxyParamCaption})}
+
+
+
+Get application ids list from particular partition. 
+
+\mbox{\Hypertarget{namespacetrh__start_a235a59731b4b7dd5da2f36bbf6193081}\label{namespacetrh__start_a235a59731b4b7dd5da2f36bbf6193081}} 
+\index{trh\_start@{trh\_start}!get\_mail\_params@{get\_mail\_params}}
+\index{get\_mail\_params@{get\_mail\_params}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_mail\_params()}{get\_mail\_params()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+mail\+\_\+params (\begin{DoxyParamCaption}\item[{}]{rfile }\end{DoxyParamCaption})}
+
+
+
+Get credential for E\+Mail notification. 
+
+\mbox{\Hypertarget{namespacetrh__start_a2b82ab8f8b93dcb69c5b362ed2c3312c}\label{namespacetrh__start_a2b82ab8f8b93dcb69c5b362ed2c3312c}} 
+\index{trh\_start@{trh\_start}!get\_partitions@{get\_partitions}}
+\index{get\_partitions@{get\_partitions}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_partitions()}{get\_partitions()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+partitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get list of partitions starting from 35 days ago. 
+
+\mbox{\Hypertarget{namespacetrh__start_af7c605f84858b3c84865c28648fd41c3}\label{namespacetrh__start_af7c605f84858b3c84865c28648fd41c3}} 
+\index{trh\_start@{trh\_start}!get\_tasks@{get\_tasks}}
+\index{get\_tasks@{get\_tasks}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{get\_tasks()}{get\_tasks()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+get\+\_\+tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get year to process depend on host IP address. 
+
+\mbox{\Hypertarget{namespacetrh__start_ae894503578f1158c72d468527ea65783}\label{namespacetrh__start_ae894503578f1158c72d468527ea65783}} 
+\index{trh\_start@{trh\_start}!run\_query@{run\_query}}
+\index{run\_query@{run\_query}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{run\_query()}{run\_query()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+run\+\_\+query (\begin{DoxyParamCaption}\item[{}]{query }\end{DoxyParamCaption})}
+
+
+
+Execute Impala query. 
+
+\mbox{\Hypertarget{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}\label{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}} 
+\index{trh\_start@{trh\_start}!split\_result@{split\_result}}
+\index{split\_result@{split\_result}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{split\_result()}{split\_result()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+split\+\_\+result (\begin{DoxyParamCaption}\item[{}]{result,  }\item[{}]{partition }\end{DoxyParamCaption})}
+
+
+
+Split response to two separate data sets\+: common info and transactions. 
+
+\mbox{\Hypertarget{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}\label{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}} 
+\index{trh\_start@{trh\_start}!start\_pool@{start\_pool}}
+\index{start\_pool@{start\_pool}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{start\_pool()}{start\_pool()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+start\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{ids }\end{DoxyParamCaption})}
+
+
+
+Start multiprocessing pool. 
+
+\mbox{\Hypertarget{namespacetrh__start_a9875ea1757768c2db960bd85e4bbd553}\label{namespacetrh__start_a9875ea1757768c2db960bd85e4bbd553}} 
+\index{trh\_start@{trh\_start}!write\_local@{write\_local}}
+\index{write\_local@{write\_local}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{write\_local()}{write\_local()}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+write\+\_\+local (\begin{DoxyParamCaption}\item[{}]{arr,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Write array of results to the local file. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetrh__start_aef314301d37648a6f9e1ef2ca5a1cc95}\label{namespacetrh__start_aef314301d37648a6f9e1ef2ca5a1cc95}} 
+\index{trh\_start@{trh\_start}!cfg@{cfg}}
+\index{cfg@{cfg}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{cfg}{cfg}}
+{\footnotesize\ttfamily trh\+\_\+start.\+cfg = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacetrh__start_a4cb395647d11a1231a075aa1cc781012}\label{namespacetrh__start_a4cb395647d11a1231a075aa1cc781012}} 
+\index{trh\_start@{trh\_start}!fileHandler@{fileHandler}}
+\index{fileHandler@{fileHandler}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{fileHandler}{fileHandler}}
+{\footnotesize\ttfamily trh\+\_\+start.\+file\+Handler = logging.\+File\+Handler(\mbox{\hyperlink{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}{log\+\_\+file\+\_\+name}})}
+
+\mbox{\Hypertarget{namespacetrh__start_a0752742e5ad0d665190829e80e3c7b6e}\label{namespacetrh__start_a0752742e5ad0d665190829e80e3c7b6e}} 
+\index{trh\_start@{trh\_start}!final@{final}}
+\index{final@{final}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{final}{final}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+final = \mbox{\hyperlink{namespacetrh__start_abbab819da3ebcbceeea97da42f10c85c}{split\+\_\+result}}(\mbox{\hyperlink{namespacetrh__start_ab101da593d419af0bcc0a7fe0254c3ae}{start\+\_\+pool}}(\mbox{\hyperlink{namespacetrh__start_aca863389e28a173578f974838bbb8131}{ids}}), partition)}
+
+\mbox{\Hypertarget{namespacetrh__start_a13f579e21a52e9a6254ac006e4ead97e}\label{namespacetrh__start_a13f579e21a52e9a6254ac006e4ead97e}} 
+\index{trh\_start@{trh\_start}!format@{format}}
+\index{format@{format}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily trh\+\_\+start.\+format}
+
+\mbox{\Hypertarget{namespacetrh__start_aee4eb618736211d96d57b405a06316b2}\label{namespacetrh__start_aee4eb618736211d96d57b405a06316b2}} 
+\index{trh\_start@{trh\_start}!hdfs\_conn@{hdfs\_conn}}
+\index{hdfs\_conn@{hdfs\_conn}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{hdfs\_conn}{hdfs\_conn}}
+{\footnotesize\ttfamily trh\+\_\+start.\+hdfs\+\_\+conn = parser.\+hdfs\+\_\+connect()}
+
+\mbox{\Hypertarget{namespacetrh__start_a12219d38d768a23ab0995dabdf18d024}\label{namespacetrh__start_a12219d38d768a23ab0995dabdf18d024}} 
+\index{trh\_start@{trh\_start}!i@{i}}
+\index{i@{i}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int trh\+\_\+start.\+i = 0}
+
+\mbox{\Hypertarget{namespacetrh__start_aca863389e28a173578f974838bbb8131}\label{namespacetrh__start_aca863389e28a173578f974838bbb8131}} 
+\index{trh\_start@{trh\_start}!ids@{ids}}
+\index{ids@{ids}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily def trh\+\_\+start.\+ids = \mbox{\hyperlink{namespacetrh__start_a08dc5143fc91c62979e554589043dd9e}{get\+\_\+ids}}(partition)}
+
+\mbox{\Hypertarget{namespacetrh__start_a2e3c457d5868a68c93900fc0fc8788aa}\label{namespacetrh__start_a2e3c457d5868a68c93900fc0fc8788aa}} 
+\index{trh\_start@{trh\_start}!level@{level}}
+\index{level@{level}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily trh\+\_\+start.\+level}
+
+\mbox{\Hypertarget{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}\label{namespacetrh__start_afc33b0d1cf4ac5f983616de15c0e647c}} 
+\index{trh\_start@{trh\_start}!log\_file\_name@{log\_file\_name}}
+\index{log\_file\_name@{log\_file\_name}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{log\_file\_name}{log\_file\_name}}
+{\footnotesize\ttfamily tuple trh\+\_\+start.\+log\+\_\+file\+\_\+name = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacetrh__start_aa1d59afb5c4238492da61a882624465d}\label{namespacetrh__start_aa1d59afb5c4238492da61a882624465d}} 
+\index{trh\_start@{trh\_start}!logarr@{logarr}}
+\index{logarr@{logarr}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{logarr}{logarr}}
+{\footnotesize\ttfamily dictionary trh\+\_\+start.\+logarr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2             \textcolor{stringliteral}{'failed\_ids'}: st\_data.failed\_ids,}
+\DoxyCodeLine{3             \textcolor{stringliteral}{'no\_info'}: st\_data.no\_info,}
+\DoxyCodeLine{4             \textcolor{stringliteral}{'no\_thist'}: st\_data.no\_thist}
+\DoxyCodeLine{5             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacetrh__start_ac812e0bde71f9e5f81fee1fc010710a2}\label{namespacetrh__start_ac812e0bde71f9e5f81fee1fc010710a2}} 
+\index{trh\_start@{trh\_start}!logFormatter@{logFormatter}}
+\index{logFormatter@{logFormatter}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{logFormatter}{logFormatter}}
+{\footnotesize\ttfamily trh\+\_\+start.\+log\+Formatter = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacetrh__start_afdc2093290a8a55dc50edb9af984c8b1}\label{namespacetrh__start_afdc2093290a8a55dc50edb9af984c8b1}} 
+\index{trh\_start@{trh\_start}!marker@{marker}}
+\index{marker@{marker}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{marker}{marker}}
+{\footnotesize\ttfamily trh\+\_\+start.\+marker = str(int(time.\+time()))}
+
+\mbox{\Hypertarget{namespacetrh__start_a4ad7cea0b8ffbae31057314d711f4360}\label{namespacetrh__start_a4ad7cea0b8ffbae31057314d711f4360}} 
+\index{trh\_start@{trh\_start}!models@{models}}
+\index{models@{models}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily dictionary trh\+\_\+start.\+models = cfg.\+active\+\_\+models}
+
+\mbox{\Hypertarget{namespacetrh__start_a7a464f5e0e48e5cb84e2e8fc7561198b}\label{namespacetrh__start_a7a464f5e0e48e5cb84e2e8fc7561198b}} 
+\index{trh\_start@{trh\_start}!name@{name}}
+\index{name@{name}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily tuple trh\+\_\+start.\+name = (\textquotesingle{}\%s\%s\+\_\+\%s.\+txt1\textquotesingle{}) \% (\mbox{\hyperlink{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}{res\+\_\+path}}, elm, partition)}
+
+\mbox{\Hypertarget{namespacetrh__start_afa14e10a604afc17836f2a66ee01567a}\label{namespacetrh__start_afa14e10a604afc17836f2a66ee01567a}} 
+\index{trh\_start@{trh\_start}!properties@{properties}}
+\index{properties@{properties}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily dictionary trh\+\_\+start.\+properties = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}}
+
+\mbox{\Hypertarget{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}\label{namespacetrh__start_a2266d99c93eab4a510cbccea902dd2ce}} 
+\index{trh\_start@{trh\_start}!res\_path@{res\_path}}
+\index{res\_path@{res\_path}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{res\_path}{res\_path}}
+{\footnotesize\ttfamily string trh\+\_\+start.\+res\+\_\+path = \textquotesingle{}./log/thist/\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacetrh__start_aadf8f34b9f0a7e75a63d5b614f4c1b94}\label{namespacetrh__start_aadf8f34b9f0a7e75a63d5b614f4c1b94}} 
+\index{trh\_start@{trh\_start}!rootLogger@{rootLogger}}
+\index{rootLogger@{rootLogger}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{rootLogger}{rootLogger}}
+{\footnotesize\ttfamily trh\+\_\+start.\+root\+Logger = logging.\+get\+Logger()}
+
+\mbox{\Hypertarget{namespacetrh__start_a99afca3ae3cbefeefa6fa49ac511a9cc}\label{namespacetrh__start_a99afca3ae3cbefeefa6fa49ac511a9cc}} 
+\index{trh\_start@{trh\_start}!st\_data@{st\_data}}
+\index{st\_data@{st\_data}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{st\_data}{st\_data}}
+{\footnotesize\ttfamily trh\+\_\+start.\+st\+\_\+data = \mbox{\hyperlink{classtrh__start_1_1_stat}{Stat}}()}
+
+\mbox{\Hypertarget{namespacetrh__start_a725423d1858090e26458a5ddbd99fba1}\label{namespacetrh__start_a725423d1858090e26458a5ddbd99fba1}} 
+\index{trh\_start@{trh\_start}!start@{start}}
+\index{start@{start}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily trh\+\_\+start.\+start = time.\+time()}
+
+\mbox{\Hypertarget{namespacetrh__start_a16036bca7d6b7826d12cbad4a1bd5664}\label{namespacetrh__start_a16036bca7d6b7826d12cbad4a1bd5664}} 
+\index{trh\_start@{trh\_start}!stop\_max\_delay@{stop\_max\_delay}}
+\index{stop\_max\_delay@{stop\_max\_delay}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{stop\_max\_delay}{stop\_max\_delay}}
+{\footnotesize\ttfamily trh\+\_\+start.\+stop\+\_\+max\+\_\+delay}
+
+\mbox{\Hypertarget{namespacetrh__start_aefce98a670a63ed0e7943fe1403a32ca}\label{namespacetrh__start_aefce98a670a63ed0e7943fe1403a32ca}} 
+\index{trh\_start@{trh\_start}!t@{t}}
+\index{t@{t}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily trh\+\_\+start.\+t = time.\+time()}
+
+\mbox{\Hypertarget{namespacetrh__start_abfe55a506afd2a530edf04029beea77e}\label{namespacetrh__start_abfe55a506afd2a530edf04029beea77e}} 
+\index{trh\_start@{trh\_start}!wait\_exponential\_max@{wait\_exponential\_max}}
+\index{wait\_exponential\_max@{wait\_exponential\_max}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{wait\_exponential\_max}{wait\_exponential\_max}}
+{\footnotesize\ttfamily trh\+\_\+start.\+wait\+\_\+exponential\+\_\+max}
+
+\mbox{\Hypertarget{namespacetrh__start_a3eb6e7124c2fe121589a524118bf8f18}\label{namespacetrh__start_a3eb6e7124c2fe121589a524118bf8f18}} 
+\index{trh\_start@{trh\_start}!wait\_exponential\_multiplier@{wait\_exponential\_multiplier}}
+\index{wait\_exponential\_multiplier@{wait\_exponential\_multiplier}!trh\_start@{trh\_start}}
+\doxysubsubsection{\texorpdfstring{wait\_exponential\_multiplier}{wait\_exponential\_multiplier}}
+{\footnotesize\ttfamily trh\+\_\+start.\+wait\+\_\+exponential\+\_\+multiplier}
+
+
+
+Request TH A\+PI with retrying up to 60 sec. 
+

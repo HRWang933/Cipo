@@ -1,0 +1,99 @@
+\hypertarget{namespacemodels_1_1td_1_1goods__services}{}\doxysection{models.\+td.\+goods\+\_\+services Namespace Reference}
+\label{namespacemodels_1_1td_1_1goods__services}\index{models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_af0eeb6a345325d14efd9d448cb3a3ce6}{helpers}} = importlib.\+import\+\_\+module(\textquotesingle{}.helpers\textquotesingle{}, \textquotesingle{}models\textquotesingle{})
+\item 
+string \mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2de719afc37f1c9b68c0cab282f86421}{table}} = \textquotesingle{}tm\+\_\+goods\+\_\+services\textquotesingle{}
+\item 
+tuple \mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_ac7dc18458fbc929ed13b7192f16e8eeb}{body}}
+\item 
+tuple \mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2bf0943b50bea0c254f025b86b39bbaf}{body\+\_\+ext}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_af08546c84c7150f63abb5b1fd423d14c}{model}} = \mbox{\hyperlink{classmodels_1_1helpers_1_1tbl__model}{helpers.\+tbl\+\_\+model}}(\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2de719afc37f1c9b68c0cab282f86421}{table}}, \mbox{[}\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_ac7dc18458fbc929ed13b7192f16e8eeb}{body}}, \mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2bf0943b50bea0c254f025b86b39bbaf}{body\+\_\+ext}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemodels_1_1td_1_1goods__services_ac7dc18458fbc929ed13b7192f16e8eeb}\label{namespacemodels_1_1td_1_1goods__services_ac7dc18458fbc929ed13b7192f16e8eeb}} 
+\index{models.td.goods\_services@{models.td.goods\_services}!body@{body}}
+\index{body@{body}!models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily tuple models.\+td.\+goods\+\_\+services.\+body}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =    (\textcolor{stringliteral}{'(ST13ApplicationNumber BIGINT,'}}
+\DoxyCodeLine{2             \textcolor{stringliteral}{'proc\_date STRING,'}}
+\DoxyCodeLine{3             \textcolor{stringliteral}{'ClassificationKindCode STRING,'}}
+\DoxyCodeLine{4             \textcolor{stringliteral}{'CommentText STRING,'}}
+\DoxyCodeLine{5             \textcolor{stringliteral}{'ClassNumber BIGINT,'}}
+\DoxyCodeLine{6             \textcolor{stringliteral}{'ClassTitleText STRING,'}}
+\DoxyCodeLine{7             \textcolor{stringliteral}{'NationalClassTotalQuantity STRING,'}}
+\DoxyCodeLine{8             \textcolor{stringliteral}{'NoBasisIndicator STRING,'}}
+\DoxyCodeLine{9             \textcolor{stringliteral}{'BasisForeignApplicationIndicator STRING,'}}
+\DoxyCodeLine{10             \textcolor{stringliteral}{'BasisForeignRegistrationIndicator STRING,'}}
+\DoxyCodeLine{11             \textcolor{stringliteral}{'BasisUseIndicator STRING,'}}
+\DoxyCodeLine{12             \textcolor{stringliteral}{'BasisIntentToUseIndicator STRING,'}}
+\DoxyCodeLine{13             \textcolor{stringliteral}{'ClassificationVersion STRING,'}}
+\DoxyCodeLine{14             \textcolor{stringliteral}{'DescriptionClassNumber BIGINT,'}}
+\DoxyCodeLine{15             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Goods STRING,'}}
+\DoxyCodeLine{16             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Servicess STRING,'}}
+\DoxyCodeLine{17             \textcolor{stringliteral}{'ClassificationTermOfficeCode STRING,'}}
+\DoxyCodeLine{18             \textcolor{stringliteral}{'ClassificationTermSourceCategory STRING,'}}
+\DoxyCodeLine{19             \textcolor{stringliteral}{'ClassificationTermText STRING,'} }
+\DoxyCodeLine{20             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Goods2 STRING,'}}
+\DoxyCodeLine{21             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Servicess2 STRING,'}}
+\DoxyCodeLine{22             \textcolor{stringliteral}{'PRIMARY KEY(ST13ApplicationNumber,proc\_date,ClassificationKindCode,CommentText,ClassNumber,ClassTitleText)) PARTITION BY HASH(ST13ApplicationNumber) PARTITIONS 12 STORED AS KUDU '})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemodels_1_1td_1_1goods__services_a2bf0943b50bea0c254f025b86b39bbaf}\label{namespacemodels_1_1td_1_1goods__services_a2bf0943b50bea0c254f025b86b39bbaf}} 
+\index{models.td.goods\_services@{models.td.goods\_services}!body\_ext@{body\_ext}}
+\index{body\_ext@{body\_ext}!models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsubsection{\texorpdfstring{body\_ext}{body\_ext}}
+{\footnotesize\ttfamily tuple models.\+td.\+goods\+\_\+services.\+body\+\_\+ext}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'(ST13ApplicationNumber BIGINT,'}}
+\DoxyCodeLine{2             \textcolor{stringliteral}{'proc\_date STRING,'}}
+\DoxyCodeLine{3             \textcolor{stringliteral}{'ClassificationKindCode STRING,'}}
+\DoxyCodeLine{4             \textcolor{stringliteral}{'CommentText STRING,'}}
+\DoxyCodeLine{5             \textcolor{stringliteral}{'ClassNumber BIGINT,'}}
+\DoxyCodeLine{6             \textcolor{stringliteral}{'ClassTitleText STRING,'}}
+\DoxyCodeLine{7             \textcolor{stringliteral}{'NationalClassTotalQuantity STRING,'}}
+\DoxyCodeLine{8             \textcolor{stringliteral}{'NoBasisIndicator STRING,'}}
+\DoxyCodeLine{9             \textcolor{stringliteral}{'BasisForeignApplicationIndicator STRING,'}}
+\DoxyCodeLine{10             \textcolor{stringliteral}{'BasisForeignRegistrationIndicator STRING,'}}
+\DoxyCodeLine{11             \textcolor{stringliteral}{'BasisUseIndicator STRING,'}}
+\DoxyCodeLine{12             \textcolor{stringliteral}{'BasisIntentToUseIndicator STRING,'}}
+\DoxyCodeLine{13             \textcolor{stringliteral}{'ClassificationVersion STRING,'}}
+\DoxyCodeLine{14             \textcolor{stringliteral}{'DescriptionClassNumber BIGINT,'}}
+\DoxyCodeLine{15             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Goods STRING,'}}
+\DoxyCodeLine{16             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Servicess STRING,'}}
+\DoxyCodeLine{17             \textcolor{stringliteral}{'ClassificationTermOfficeCode STRING,'}}
+\DoxyCodeLine{18             \textcolor{stringliteral}{'ClassificationTermSourceCategory STRING,'}}
+\DoxyCodeLine{19             \textcolor{stringliteral}{'ClassificationTermText STRING,'}}
+\DoxyCodeLine{20             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Goods2 STRING,'}}
+\DoxyCodeLine{21             \textcolor{stringliteral}{'GoodsServicesDescriptionText\_Servicess2 STRING) '})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemodels_1_1td_1_1goods__services_af0eeb6a345325d14efd9d448cb3a3ce6}\label{namespacemodels_1_1td_1_1goods__services_af0eeb6a345325d14efd9d448cb3a3ce6}} 
+\index{models.td.goods\_services@{models.td.goods\_services}!helpers@{helpers}}
+\index{helpers@{helpers}!models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsubsection{\texorpdfstring{helpers}{helpers}}
+{\footnotesize\ttfamily models.\+td.\+goods\+\_\+services.\+helpers = importlib.\+import\+\_\+module(\textquotesingle{}.helpers\textquotesingle{}, \textquotesingle{}models\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemodels_1_1td_1_1goods__services_af08546c84c7150f63abb5b1fd423d14c}\label{namespacemodels_1_1td_1_1goods__services_af08546c84c7150f63abb5b1fd423d14c}} 
+\index{models.td.goods\_services@{models.td.goods\_services}!model@{model}}
+\index{model@{model}!models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily models.\+td.\+goods\+\_\+services.\+model = \mbox{\hyperlink{classmodels_1_1helpers_1_1tbl__model}{helpers.\+tbl\+\_\+model}}(\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2de719afc37f1c9b68c0cab282f86421}{table}}, \mbox{[}\mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_ac7dc18458fbc929ed13b7192f16e8eeb}{body}}, \mbox{\hyperlink{namespacemodels_1_1td_1_1goods__services_a2bf0943b50bea0c254f025b86b39bbaf}{body\+\_\+ext}}\mbox{]})}
+
+\mbox{\Hypertarget{namespacemodels_1_1td_1_1goods__services_a2de719afc37f1c9b68c0cab282f86421}\label{namespacemodels_1_1td_1_1goods__services_a2de719afc37f1c9b68c0cab282f86421}} 
+\index{models.td.goods\_services@{models.td.goods\_services}!table@{table}}
+\index{table@{table}!models.td.goods\_services@{models.td.goods\_services}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily string models.\+td.\+goods\+\_\+services.\+table = \textquotesingle{}tm\+\_\+goods\+\_\+services\textquotesingle{}}
+

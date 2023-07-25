@@ -1,0 +1,63 @@
+import importlib
+helpers = importlib.import_module('.helpers', 'models')
+
+######################################################################
+#
+######################################################################
+table  = 'ca_tm_footnote'
+body   =   ('(ST13ApplicationNumber BIGINT,'
+            'proc_date STRING,'
+	    'CategoryCode STRING ,'
+	    'CategoryDescription STRING ,'
+	    'RegisteredDate STRING ,'
+	    'ChangedDate STRING ,'
+	    'Structure_TextLine1 STRING ,'
+	    'Structure_TextLine2 STRING ,'
+	    'Structure_TextLine3 STRING ,'
+	    'Structure_TextLine4 STRING ,'
+	    'Structure_TextLine5 STRING ,'
+	    'Structure_TextLine6 STRING ,'
+	    'Structure_TextLine7 STRING ,'
+	    'Structure_TextLine8 STRING ,'
+	    'Structure_TextLine9 STRING ,'
+	    'Structure_TextLine10 STRING ,'
+	    'FormatedText_TextLine1 STRING ,'
+	    'FormatedText_TextLine2 STRING ,'
+	    'FormatedText_TextLine3 STRING ,'
+	    'FormatedText_TextLine4 STRING ,'
+	    'FormatedText_TextLine5 STRING ,'
+	    'FormatedText_TextLine6 STRING ,'
+	    'FormatedText_TextLine7 STRING ,'
+	    'FormatedText_TextLine8 STRING ,'
+	    'FormatedText_TextLine9 STRING ,'
+	    'FormatedText_TextLine10 STRING,'
+            'PRIMARY KEY(ST13ApplicationNumber,proc_date,CategoryCode,CategoryDescription,RegisteredDate,ChangedDate)) STORED AS KUDU ')
+
+body_ext = ('(ST13ApplicationNumber BIGINT,'
+            'proc_date STRING,'
+	    'CategoryCode STRING ,'
+	    'CategoryDescription STRING ,'
+	    'RegisteredDate STRING ,'
+	    'ChangedDate STRING ,'
+	    'Structure_TextLine1 STRING ,'
+	    'Structure_TextLine2 STRING ,'
+	    'Structure_TextLine3 STRING ,'
+	    'Structure_TextLine4 STRING ,'
+	    'Structure_TextLine5 STRING ,'
+	    'Structure_TextLine6 STRING ,'
+	    'Structure_TextLine7 STRING ,'
+	    'Structure_TextLine8 STRING ,'
+	    'Structure_TextLine9 STRING ,'
+	    'Structure_TextLine10 STRING ,'
+	    'FormatedText_TextLine1 STRING ,'
+	    'FormatedText_TextLine2 STRING ,'
+	    'FormatedText_TextLine3 STRING ,'
+	    'FormatedText_TextLine4 STRING ,'
+	    'FormatedText_TextLine5 STRING ,'
+	    'FormatedText_TextLine6 STRING ,'
+	    'FormatedText_TextLine7 STRING ,'
+	    'FormatedText_TextLine8 STRING ,'
+	    'FormatedText_TextLine9 STRING ,'
+	    'FormatedText_TextLine10 STRING ) ')
+
+model = helpers.tbl_model(table, [body, body_ext])

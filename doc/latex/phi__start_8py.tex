@@ -1,0 +1,78 @@
+\hypertarget{phi__start_8py}{}\doxysection{phi\+\_\+start.\+py File Reference}
+\label{phi__start_8py}\index{phi\_start.py@{phi\_start.py}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_stat}{phi\+\_\+start.\+Stat}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1wait__for__non__empty__text}{phi\+\_\+start.\+wait\+\_\+for\+\_\+non\+\_\+empty\+\_\+text}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_browser}{phi\+\_\+start.\+Browser}}
+\item 
+class \mbox{\hyperlink{classphi__start_1_1_worker}{phi\+\_\+start.\+Worker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacephi__start}{phi\+\_\+start}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacephi__start_a425196eeffb138e7055fda3120ddff7c}{phi\+\_\+start.\+write\+\_\+local}} (arr, name)
+\item 
+def \mbox{\hyperlink{namespacephi__start_a2494a04caa4062d4a31dd7133f69617b}{phi\+\_\+start.\+run\+\_\+query}} (query)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ae85e2e709ed646269bbf8c015c7e8b9a}{phi\+\_\+start.\+get\+\_\+partitions}} (years)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ad914505ae8df485692206a523b05f675}{phi\+\_\+start.\+get\+\_\+ids}} (partition)
+\item 
+def \mbox{\hyperlink{namespacephi__start_a4a7318f742575714c6b73371676251a9}{phi\+\_\+start.\+split\+\_\+result}} (result, partition)
+\item 
+def \mbox{\hyperlink{namespacephi__start_ac76fb3dd76a6471b91e86fba37114522}{phi\+\_\+start.\+get\+\_\+tasks}} ()
+\item 
+def \mbox{\hyperlink{namespacephi__start_aa244725efe52437f269b293b07ac6b4d}{phi\+\_\+start.\+get\+\_\+mail\+\_\+params}} (rfile)
+\begin{DoxyCompactList}\small\item\em Get credential for E\+Mail notification. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacephi__start_a1ab08a49458af2b1a3df2de169845e16}{phi\+\_\+start.\+start\+\_\+queue}} (ids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacephi__start_a9e00c95274959ec596a4685363af63e2}{phi\+\_\+start.\+t}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacephi__start_a4146bada5aa9b39b81b8e99a3cb1f973}{phi\+\_\+start.\+format}}
+\item 
+\mbox{\hyperlink{namespacephi__start_ab019961007d4523b29f00c2fbe7df04d}{phi\+\_\+start.\+level}}
+\item 
+tuple \mbox{\hyperlink{namespacephi__start_a7974e78ab3250a98371a856c3db6ac72}{phi\+\_\+start.\+log\+\_\+file\+\_\+name}} = (\textquotesingle{}./log/tr\+\_\+history\+\_\+\%s.\+log\textquotesingle{}) \% (str(datetime.\+now())\mbox{[}2\+:19\mbox{]}.replace(\textquotesingle{} \textquotesingle{},\textquotesingle{}\+\_\+\textquotesingle{}))
+\item 
+\mbox{\hyperlink{namespacephi__start_affa86deb1d9e176c048524761e1aadc1}{phi\+\_\+start.\+log\+Formatter}} = logging.\+Formatter(\textquotesingle{}\mbox{[}\%(asctime)s\mbox{]} \%(levelname)s\+: \%(message)s\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacephi__start_a2fffb0cd4cc2a8f3b847796d24a0ffda}{phi\+\_\+start.\+root\+Logger}} = logging.\+get\+Logger()
+\item 
+\mbox{\hyperlink{namespacephi__start_a5758f9699dec2f2cdce8a0c015a82eab}{phi\+\_\+start.\+file\+Handler}} = logging.\+File\+Handler(log\+\_\+file\+\_\+name)
+\item 
+dictionary \mbox{\hyperlink{namespacephi__start_a3f4228074ab75e2eae8c50304d22568e}{phi\+\_\+start.\+properties}} = \{\textquotesingle{}proc\+\_\+date\textquotesingle{}\+: str(datetime.\+now())\mbox{[}\+:10\mbox{]}.replace(\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}\textquotesingle{})\}
+\item 
+\mbox{\hyperlink{namespacephi__start_a25a7f3a87c8b00596a3b3d4e9fe59687}{phi\+\_\+start.\+cfg}} = importlib.\+import\+\_\+module(\textquotesingle{}.cfg\textquotesingle{}, \textquotesingle{}config\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacephi__start_a6fc908ef853ce7b3dbda27018f5b80e0}{phi\+\_\+start.\+models}} = cfg.\+active\+\_\+models
+\item 
+\mbox{\hyperlink{namespacephi__start_aeba1ba08f2177e76c149ea168228f98a}{phi\+\_\+start.\+start}} = time.\+time()
+\item 
+def \mbox{\hyperlink{namespacephi__start_a443e524ba79a377542b17988f2891200}{phi\+\_\+start.\+ids}} = get\+\_\+ids(partition)
+\item 
+\mbox{\hyperlink{namespacephi__start_a3497fa3000f4fe3e5f9be64f28b35292}{phi\+\_\+start.\+st\+\_\+data}} = Stat(len(ids))
+\item 
+def \mbox{\hyperlink{namespacephi__start_a6dee3a51bc4e35d9815920775119c500}{phi\+\_\+start.\+final}} = split\+\_\+result(start\+\_\+queue(ids), partition)
+\item 
+\mbox{\hyperlink{namespacephi__start_a29757c3aa2d9bfef580e4b69045095d5}{phi\+\_\+start.\+hdfs\+\_\+conn}} = parser.\+hdfs\+\_\+connect()
+\item 
+string \mbox{\hyperlink{namespacephi__start_af49f832fadeb8f27765fbdfdbf3f5d9e}{phi\+\_\+start.\+res\+\_\+path}} = \textquotesingle{}./log/phi/\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacephi__start_a560ec924eef243f52549bb093a241ee7}{phi\+\_\+start.\+marker}} = str(int(time.\+time()))
+\item 
+dictionary \mbox{\hyperlink{namespacephi__start_a5d164a8b61d5c45d8ddd30a3cbd8e85c}{phi\+\_\+start.\+logarr}}
+\item 
+tuple \mbox{\hyperlink{namespacephi__start_a6a55746c4c890a23ccf0ef57a394e313}{phi\+\_\+start.\+name}} = (\textquotesingle{}\%s\%s\+\_\+\%s.\+log\textquotesingle{}) \% (res\+\_\+path, elm, partition)
+\end{DoxyCompactItemize}
